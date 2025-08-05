@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>صفحه اصلی</title>
+    <style>
+      body {
+        direction: rtl;
+        font-family: "Tahoma", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #e0eafc, #cfdef3);
+        color: #333;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #ffffffaa;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .clock {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .social-links a {
+        text-decoration: none;
+        color: white;
+        background-color: #0077b6;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+      }
+
+      .social-links a:hover {
+        background-color: #023e8a;
+      }
+
+      main {
+        text-align: center;
+        padding: 5rem 1rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="clock" id="clock">00:00:00 AM</div>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank">فیس‌بوک</a>
+        <a href="https://wa.me/your_number" target="_blank">واتساپ</a>
+        <a href="https://t.me/your_username" target="_blank">تلگرام</a>
+        <a href="https://instagram.com" target="_blank">اینستاگرام</a>
+        <a href="https://tiktok.com" target="_blank">تیک‌تاک</a>
+      </div>
+    </header>
+
+    <main>
+      <h1>به وبسایت ما خوش آمدید</h1>
+      <p>
+        این یک نمونه ساده با دیزاین مدرن است که شامل لینک‌های شبکه‌های اجتماعی و
+        ساعت دیجیتال می‌باشد.
+      </p>
+    </main>
+
+    <script>
+      function updateClock() {
+        const now = new Date();
+        let hours = now.getHours();
+        const minutes = now.getMinutes();
+        const seconds = now.getSeconds();
+        const ampm = hours >= 12 ? "PM" : "AM";
+        hours = hours % 12 || 12;
+        const timeString = `${String(hours).padStart(2, "0")}:${String(
+          minutes
+        ).padStart(2, "0")}:${String(seconds).padStart(2, "0")} ${ampm}`;
+        document.getElementById("clock").textContent = timeString;
+      }
+
+      setInterval(updateClock, 1000);
+      updateClock(); // call once immediately
+    </script>
+  </body>
+</html>

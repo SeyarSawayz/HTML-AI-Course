@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 3 Form</title>
+    <style>
+      body {
+        font-family: "Tahoma", sans-serif;
+        background-color: #f4f6f8;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      form {
+        background-color: #ffffff;
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+      }
+
+      h4 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #333;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #444;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        border-color: #4caf50;
+        outline: none;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <h4>شهرت مریض</h4>
+      <div>
+        <label for="name">نام</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="اسم تان را درج کنید"
+        />
+      </div>
+
+      <div>
+        <label for="gender">جنسیت</label>
+        <select name="gender" id="gender" required>
+          <option value="" disabled selected>جنسیت را انتخاب کنید</option>
+          <option value="male">ذکور</option>
+          <option value="female">اناث</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="age">سن</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          placeholder="سن تان را درج کنید"
+        />
+      </div>
+
+      <div>
+        <label for="mobile">شماره تماس</label>
+        <input
+          type="tel"
+          name="mobile"
+          id="mobile"
+          placeholder="شماره تماس تان را درج کنید"
+        />
+      </div>
+
+      <div>
+        <label for="addr">آدرس</label>
+        <input
+          type="text"
+          name="addr"
+          id="addr"
+          placeholder=" آدرس تان را درج کنید"
+        />
+      </div>
+
+      <div>
+        <label for="doA">تاریخ پذیرش</label>
+        <input type="date" name="doA" id="doA" />
+      </div>
+
+      <div>
+        <label for="dr">داکتر معالج</label>
+        <select name="dr" id="dr" required>
+          <option value="" disabled selected>داکتر را انتخاب کنید</option>
+          <option value="hamid">داکتر حمید</option>
+          <option value="sakha">داکتر سخا</option>
+          <option value="faheem">داکتر فهیم</option>
+          <option value="naweed">داکتر نوید</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="details">جزییات مریض</label>
+        <textarea
+          name="details"
+          id="details"
+          rows="4"
+          placeholder="جزییات بیشتر در قسمت مریض را درج کنید"
+        ></textarea>
+      </div>
+
+      <button type="submit">ارسال معلومات</button>
+    </form>
+  </body>
+</html>

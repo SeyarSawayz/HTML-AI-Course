@@ -1,0 +1,2435 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"3a11c0aac3",applicationID:"201277280"};;/*! For license information please see nr-loader-rum-1.293.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let o in a)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},555:(e,t,r)=>{"use strict";r.d(t,{D:()=>s,f:()=>o});var n=r(384),i=r(122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const s=e=>(0,i.a)(e,a)},324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>a,xv:()=>n});const n="1.293.0",i="PROD",a="CDN"},154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>d,bv:()=>a,gm:()=>o,mw:()=>s,sb:()=>u});var n=r(863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s=Boolean("hidden"===o?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),u=c&&"undefined"==typeof SharedWorker,d=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)())},241:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(154);const i="newrelic";function a(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>u,Ze:()=>f,x3:()=>d});var n=r(241),i=r(836),a=r(606),o=r(860),s=r(646);const c={};function u(e,t){const r={staged:!1,priority:o.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function d(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every((([e,t])=>t.staged))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((([t])=>{c[e].delete(t),p(e,t)})))}function p(e,t,r=!0){const o=e?i.ee.get(e):i.ee,c=a.i.handlers;if(!o.aborted&&o.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=o.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)m(e[t],r);Object.entries(r).forEach((([e,t])=>{Object.values(t||{}).forEach((t=>{t[0]?.on&&t[0]?.context()instanceof s.y&&t[0].on(e,t[1])}))}))}}o.isolatedBacklog||delete c[t],o.backlog[t]=null,o.emit("drain-"+t,[])}}function m(e,t){var r=e[1];Object.values(t[r]||{}).forEach((t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}}))}},836:(e,t,r)=>{"use strict";r.d(t,{P:()=>s,ee:()=>c});var n=r(384),i=r(990),a=r(646),o=r(607);const s="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);for(var s=g(n),u=m(e),d=u.length,l=0;l<d;l++)u[l].apply(s,r);var p=v()[o[e]];p&&p.push([f,e,r,s]);return s},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((([e,n])=>{o[n]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,s,(()=>new a.y(s))):new a.y(s)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},606:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(908);a.on=o;var i=a.handlers={};function a(e,t,r,a){o(a||n.d,i,e,t,r)}function o(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var o=t[a]=t[a]||{};(o[r]=o[r]||[]).push([e,i])}},878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(566).bz)()},566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,bz:()=>o});var n=r(154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var s=0;s<e;s++)o.push(a(r,i++).toString(16));return o.join("")}},614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>o,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>a});const n="NRBA",i="SESSION",a=144e5,o=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},701:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,t:()=>o});var n=r(241);const i=new Set,a={};function o(e,t){const r=t.agentIdentifier;a[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),a[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout((()=>{i=clearTimeout(i)}),t)),n||(clearTimeout(i),i=setTimeout((()=>{e.apply(this,r)}),t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>a,Qr:()=>s,sB:()=>o});var n=r(878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,n.sp)("load",e,t)}function o(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}function s(e){if(i())return e();(0,n.sp)("popstate",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>a,US:()=>u,Zm:()=>o,bQ:()=>c,dV:()=>s,pV:()=>d});var n=r(154),i=r(863);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function s(){let e=o();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket}),e}function c(e,t){let r=o();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e,t){o()[e]=t}function d(){return function(){let e=o();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),s(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},773:(e,t,r)=>{"use strict";r.d(t,{z_:()=>a,XG:()=>s,TZ:()=>n,rs:()=>i,xV:()=>o});r(154),r(566),r(384);const n=r(860).K7.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},234:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(836),i=r(687);class a{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},741:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e){return this.#e(i.Dl,e)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(){return this.#e(i.dT)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}}},261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>u,BL:()=>s,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Tb:()=>l,U2:()=>a,V1:()=>k,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",a="addToTrace",o="addRelease",s="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",k="measure"},163:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(384),i=r(741);var a=r(555);r(860).K7.genericEvents;const o="experimental.marks",s="experimental.measures",c="experimental.resources",u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(614),l=r(944),f=r(122);const g="[data-nr-mask]",p=e=>(0,f.a)(e,(()=>{const e={feature_flags:[],experimental:{marks:!1,measures:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{allow_registered_children:!0,duplicate_registered_data:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{get capture_marks(){return e.feature_flags.includes(o)||e.experimental.marks},set capture_marks(t){e.experimental.marks=t},get capture_measures(){return e.feature_flags.includes(s)||e.experimental.measures},set capture_measures(t){e.experimental.measures=t},capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(g):""===t||null===t?e.mask_selector=g:(0,l.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var m=r(154),h=r(324);let v=0;const b={buildEnv:h.F3,distMethod:h.Xs,version:h.xv,originTime:m.WN},y={appMetadata:{},customTransaction:void 0,denyList:void 0,disabled:!1,entityManager:void 0,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,get harvestCount(){return++v}},_=e=>{const t=(0,f.a)(e,y),r=Object.keys(b).reduce(((e,t)=>(e[t]={value:b[t],writable:!1,configurable:!0,enumerable:!0},e)),{});return Object.defineProperties(t,r)};var w=r(701);const x=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var k=r(836),A=r(241);const S={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},T=e=>(0,f.a)(e,S),R=new Set;function E(e,t={},r,o){let{init:s,info:c,loader_config:u,runtime:d={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();s=e.init,c=e.info,u=e.loader_config}e.init=p(s||{}),e.loader_config=T(u||{}),c.jsAttributes??={},m.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,a.D)(c);const f=e.init,g=[c.beacon,c.errorBeacon];R.has(e.agentIdentifier)||(f.proxy.assets&&(x(f.proxy.assets),g.push(f.proxy.assets)),f.proxy.beacon&&g.push(f.proxy.beacon),function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach((r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let a=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return a?a(...t):n})}))}(e),(0,n.US)("activatedFeatures",w.B),e.runSoftNavOverSpa&&=!0===f.soft_navigations.enabled&&f.feature_flags.includes("soft_nav")),d.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?g:[]],d.ptid=e.agentIdentifier,d.loaderType=r,e.runtime=_(d),R.has(e.agentIdentifier)||(e.ee=k.ee.get(e.agentIdentifier),e.exposed=l,(0,A.W)({agentIdentifier:e.agentIdentifier,drained:!!w.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),R.add(e.agentIdentifier)}},374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>s,df:()=>a,qY:()=>n,v4:()=>o});const n="events",i="jserrors",a="browser/blobs",o="rum",s="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.spa]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.softNav]:8,[c.sessionReplay]:9,[c.logging]:10,[c.genericEvents]:11},d={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.spa]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:a,[c.sessionReplay]:a,[c.logging]:s,[c.genericEvents]:"ins"}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.293.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.293.0.PROD:",i.l=(r,n,a,o)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==a)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){s=l;break}}if(!s){c=!0;var f={296:"sha512-M1viQxU/Sd10c/wA0iJyMGykq7mUO4/cNh2pUlWVWSRdp2RUo2Lmen9N19KuzHKjUln7vOC7HGbkzvGvRT/yQg=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[o]&&(s.integrity=f[o])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[o,s,c]=r,u=0;if(o.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)a=o[u],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.293.0.PROD"]=self["webpackChunk:NRBA-1.293.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(374);var e=i(566),t=i(741);class r extends t.W{agentIdentifier=(0,e.LA)(16)}var n=i(860);const a=Object.values(n.K7);var o=i(163);var s=i(908),c=i(863),u=i(261),d=i(241),l=i(944),f=i(701),g=i(773);function p(e,t,i,a){const o=a||i;!o||o[e]&&o[e]!==r.prototype[e]||(o[e]=function(){(0,s.p)(g.xV,["API/"+e+"/called"],void 0,n.K7.metrics,i.ee),(0,d.W)({agentIdentifier:i.agentIdentifier,drained:!!f.B?.[i.agentIdentifier],type:"data",name:"api",feature:u.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,l.R)(23,e)}})}function m(e,t,r,n,i){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(i||null===r)&&(0,s.p)(u.Pl+n,[(0,c.t)(),t,r],void 0,"session",e.ee)}var h=i(687),v=i(234),b=i(289),y=i(154),_=i(384);const w=e=>y.RI&&!0===e?.privacy.cookies_enabled;function x(e){return!!(0,_.dV)().o.MO&&w(e)&&!0===e?.session_trace.enabled}var k=i(389);class A extends v.W{constructor(e,t){super(e.agentIdentifier,t),this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise(((t,r)=>{this.ee.on("manual-start-all",(0,k.J)((()=>{(0,h.Ak)(e.agentIdentifier,this.featureName),t()})))})):(0,h.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;let a;this.onAggregateImported=new Promise((e=>{a=e}));const o=async()=>{let o;await this.deferred;try{if(w(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,663));o=t(e)}}catch(e){(0,l.R)(20,e),this.ee.emit("internal-error",[e]),this.featureName===n.K7.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,o,e.init))return(0,h.Ze)(this.agentIdentifier,this.featureName),void a(!1);const{Aggregate:n}=await t();this.featAggregate=new n(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),a(!0)}catch(e){(0,l.R)(34,e),this.abortHandler?.(),(0,h.Ze)(this.agentIdentifier,this.featureName,!0),a(!1),this.ee&&this.ee.abort()}};y.RI?(0,b.GG)((()=>o()),!0):o()}#t(e,t,r){switch(e){case n.K7.sessionReplay:return x(r)&&!!t;case n.K7.sessionTrace:return!!t;default:return!0}}}var S=i(630),T=i(614);class R extends A{static featureName=S.T;constructor(e){var t;super(e,S.T),this.setupInspectionEvents(e.agentIdentifier),t=e,p(u.Fw,(function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(u.Pl+u.Fw,[(0,c.t)()],void 0,void 0,t.ee))}),t),this.ee.on("api-send-rum",((e,t)=>(0,s.p)("send-rum",[e,t],void 0,this.featureName,this.ee))),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,108))))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,d.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,b.sB)((e=>{t(e,"DOMContentLoaded")})),(0,b.GG)((e=>{t(e,"load")})),(0,b.Qr)((e=>{t(e,"navigate")})),this.ee.on(T.tS.UPDATE,((t,r)=>{(0,d.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})}))}}var E=i(843),N=i(878),j=i(782);class I extends A{static featureName=j.T;constructor(e){super(e,j.T),y.RI&&((0,E.u)((()=>(0,s.p)("docHidden",[(0,c.t)()],void 0,j.T,this.ee)),!0),(0,N.sp)("pagehide",(()=>(0,s.p)("winPagehide",[(0,c.t)()],void 0,j.T,this.ee))),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,350)))))}}class O extends A{static featureName=g.TZ;constructor(e){super(e,g.TZ),y.RI&&document.addEventListener("securitypolicyviolation",(e=>{(0,s.p)(g.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)})),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,373))))}}new class extends r{constructor(e){var t;(super(),y.gm)?(this.features={},(0,_.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(R),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===n.K7.softNav)),(0,o.j)(this,e,e.loaderType||"agent"),t=this,p(u.cD,(function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return m(t,e,r,u.cD,n);(0,l.R)(40,typeof r)}else(0,l.R)(39,typeof e)}),t),function(e){p(u.Dl,(function(t){if("string"==typeof t||null===t)return m(e,"enduser.id",t,u.Dl,!0);(0,l.R)(41,typeof t)}),e)}(this),function(e){p(u.nb,(function(t){if("string"==typeof t||null===t)return m(e,"application.version",t,u.nb,!1);(0,l.R)(42,typeof t)}),e)}(this),function(e){p(u.d3,(function(){e.ee.emit("manual-start-all")}),e)}(this),this.run()):(0,l.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return a.forEach((r=>{t[r]=!!e[r]?.enabled})),t}(this.init),t=[...this.desiredFeatures];t.sort(((e,t)=>n.P3[e.featureName]-n.P3[t.featureName])),t.forEach((t=>{if(!e[t.featureName]&&t.featureName!==n.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&t.featureName===n.K7.spa)return;if(!this.runSoftNavOverSpa&&t.featureName===n.K7.softNav)return;const r=function(e){switch(e){case n.K7.ajax:return[n.K7.jserrors];case n.K7.sessionTrace:return[n.K7.ajax,n.K7.pageViewEvent];case n.K7.sessionReplay:return[n.K7.sessionTrace];case n.K7.pageViewTiming:return[n.K7.pageViewEvent];default:return[]}}(t.featureName).filter((e=>!(e in this.features)));r.length>0&&(0,l.R)(36,{targetFeature:t.featureName,missingDependencies:r}),this.features[t.featureName]=new t(this)}))}catch(e){(0,l.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,_.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}({features:[R,I,O],loaderType:"lite"})})()})();</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-2894162-14", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga('require', 'displayfeatures');ga("send", "pageview");</script>
+<meta name="title" content="Breaking News, Sports and Politics today in Afghanistan | TOLOnews" />
+<meta name="description" content="Get up-to-date information on what’s happening in Covid19, business, sports, government, arts, and culture, in the world and Afghanistan" />
+<link rel="canonical" href="https://tolonews.com/" />
+<link rel="shortlink" href="https://tolonews.com/" />
+<meta property="og:image" content="https://www.tolonews.com/themes/custom/tolonews/images/logo.png" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Get up to date information on what’s happening in business, sports, government, arts and culture, in the world and in the 2019 elections in Afghanistan" />
+<meta property="og:url" content="https://tolonews.com/" />
+<meta property="og:site_name" content="TOLOnews" />
+<meta property="og:title" content="TOLOnews" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Get up to date information on what’s happening in business, sports, government, arts and culture, in the world and in the 2019 elections in Afghanistan" />
+<meta name="twitter:site" content="@TOLOnews" />
+<meta name="twitter:url" content="https://tolonews.com/front" />
+<meta name="twitter:image" content="https://www.tolonews.com/themes/custom/tolonews/images/logo.png" />
+<meta name="twitter:title" content="TOLOnews" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "author": {
+                "@type": "Organization",
+                "name": "TOLOnews",
+                "url": "https://www.tolonews.com",
+                "logo": {
+                    "@type": "ImageObject",
+                    "representativeOfPage": "True",
+                    "url": "https://www.tolonews.com/themes/custom/tolonews/images/logo.png",
+                    "width": "91",
+                    "height": "91"
+                }
+            },
+            "description": "Get up to date information on what’s happening in business, sports, government, arts and culture, in the world and in the 2019 elections in Afghanistan",
+            "@type": "WebPage"
+        }
+    ]
+}</script>
+<meta property="fb:pages" content="187202271320522" />
+<link rel="shortcut icon" href="/themes/custom/tolonews/favicon.ico" type="image/vnd.microsoft.icon" />
+<script src="/sites/default/files/js/google_tag.data_layer.js?sz46wm"></script>
+<script src="/sites/default/files/js/google_tag.script.js?sz46wm"></script>
+
+    <title>Breaking News, Sports and Politics today in Afghanistan | TOLOnews</title>
+    <style media="all">
+@import url("/core/assets/vendor/normalize-css/normalize.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/ajax-progress.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/align.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/autocomplete-loading.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/fieldgroup.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/container-inline.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/clearfix.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/details.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/hidden.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/item-list.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/js.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/nowrap.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/position-container.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/progress.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/reset-appearance.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/resize.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/sticky-header.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/system-status-counter.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/system-status-report-counters.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/system-status-report-general-info.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/tabledrag.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/tablesort.module.css?sz46wm");
+@import url("/core/themes/stable/css/system/components/tree-child.module.css?sz46wm");
+@import url("/modules/contrib/poll/css/poll.base.css?sz46wm");
+@import url("/modules/contrib/juicebox/css/admin_styles.css?sz46wm");
+@import url("/core/themes/stable/css/views/views.module.css?sz46wm");
+</style>
+<style media="all">
+@import url("/core/themes/classy/css/components/action-links.css?sz46wm");
+@import url("/core/themes/classy/css/components/breadcrumb.css?sz46wm");
+@import url("/core/themes/classy/css/components/button.css?sz46wm");
+@import url("/core/themes/classy/css/components/collapse-processed.css?sz46wm");
+@import url("/core/themes/classy/css/components/container-inline.css?sz46wm");
+@import url("/core/themes/classy/css/components/details.css?sz46wm");
+@import url("/core/themes/classy/css/components/exposed-filters.css?sz46wm");
+@import url("/core/themes/classy/css/components/field.css?sz46wm");
+@import url("/core/themes/classy/css/components/form.css?sz46wm");
+@import url("/core/themes/classy/css/components/icons.css?sz46wm");
+@import url("/core/themes/classy/css/components/inline-form.css?sz46wm");
+@import url("/core/themes/classy/css/components/item-list.css?sz46wm");
+@import url("/core/themes/classy/css/components/link.css?sz46wm");
+@import url("/core/themes/classy/css/components/links.css?sz46wm");
+@import url("/core/themes/classy/css/components/menu.css?sz46wm");
+@import url("/core/themes/classy/css/components/more-link.css?sz46wm");
+@import url("/core/themes/classy/css/components/pager.css?sz46wm");
+@import url("/core/themes/classy/css/components/tabledrag.css?sz46wm");
+@import url("/core/themes/classy/css/components/tableselect.css?sz46wm");
+@import url("/core/themes/classy/css/components/tablesort.css?sz46wm");
+@import url("/core/themes/classy/css/components/tabs.css?sz46wm");
+@import url("/core/themes/classy/css/components/textarea.css?sz46wm");
+@import url("/core/themes/classy/css/components/ui-dialog.css?sz46wm");
+@import url("/core/themes/classy/css/components/progress.css?sz46wm");
+@import url("/core/themes/classy/css/components/messages.css?sz46wm");
+@import url("/themes/custom/tolonews/html/css/styles.css?sz46wm");
+@import url("/themes/custom/tolonews/html/css/external/flag-icon.css?sz46wm");
+@import url("/themes/custom/tolonews/html/css/external/flag-icon-base.css?sz46wm");
+@import url("/themes/custom/tolonews/html/css/external/flag-icon-list.css?sz46wm");
+@import url("/themes/custom/tolonews/html/css/external/flag-icon-more.css?sz46wm");
+@import url("/themes/custom/tolonews/html/css/external/variables.css?sz46wm");
+</style>
+<style media="all">
+@import url("/themes/custom/tolonews/html/css/external/form.css?sz46wm");
+</style>
+
+    
+<!--[if lte IE 8]>
+<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+<![endif]-->
+
+    
+    <script type="text/javascript">
+        // window._taboola = window._taboola || [];
+        // _taboola.push({article:'auto'});
+        // !function (e, f, u, i) {
+        //    if (!document.getElementById(i)){
+        //    e.async = 1;
+        //    e.src = u;
+        //    e.id = i;
+        //    f.parentNode.insertBefore(e, f);
+        //    }
+        // }(document.createElement('script'),
+        // document.getElementsByTagName('script')[0],
+        // '//cdn.taboola.com/libtrc/tolonews/loader.js',
+        // 'tb_loader_script');
+        // if(window.performance && typeof window.performance.mark == 'function')
+        //    {window.performance.mark('tbl_ic');}
+    </script> 
+
+  </head>
+  <body>
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    
+    
+<div class="overlay visible-onlymobile"></div>
+
+<header>
+    <div class="group-top hidden-onmobile">
+        <div class="inner-container">
+            	
+            <!-- <div id="banner-ads">
+                <a href="https://www.ghazanfarbank.com/" target="_blank"><img src="/themes/custom/tolonews/images/ghazanfar-bank-mdc.gif" onload="ga(\'send\', \'event\', \'BannerAds\', \'image-load\', \'ghazanfarbank\');"></a>
+            </div> -->
+
+        </div>
+    </div>
+    <div class="navigation-sticky">
+        <div class=" group-middle clearfix">
+            <div class="inner-container">
+                <div class="logo">
+                    <h1>
+                                  <a href="/" title="Home" rel="home" class="site-logo">
+      <img src="/themes/custom/tolonews/images/logo-23.png" alt="Home" />
+    </a>
+      
+
+                    </h1>
+                </div>
+                <button type="button" class="navbar-toggle">
+                    <span>MENU</span>
+                </button>
+                <!-- <a href="/live" class="watch-live watch-link bold visible-onlymobile" title="WATCH">
+                <span><i class="live-lighting-icon" aria-hidden="true"></i>WATCH LIVE</span>
+				</a> -->
+                <div class="container-header">
+                    <div class="header-right clearfix">
+                        <div class="search">
+
+                                                        
+                                                        <form class="form-search-header"
+                                  accept-charset="UTF-8" method="get"
+                                  action="/search">
+                                <label class="hide"
+                                       for="edit-search">Rechercher </label>
+                                <input type="submit" class="form-submit"
+                                       id="search-submit">
+                                <input id="edit-search" type="text"
+                                       name="search"
+                                       maxlength="128"
+                                       value=""
+                                       placeholder="Search on TOLOnews">
+                            </form>
+                        </div>
+                        <div class="top-navigation clearfix">
+                              <ul>
+      <li><a href="/about-us" data-drupal-link-system-path="node/36">About Us</a></li>
+      <li><a href="/contact" data-drupal-link-system-path="contact">Contact</a></li>
+      <li><a href="/newsletter" title="" id="" name="" rel="" style="" target="" accesskey="" data-drupal-link-system-path="newsletter">Newsletter</a></li>
+  </ul>
+
+<ul class="language"><li hreflang="en" data-drupal-link-system-path="&lt;front&gt;" class="en bold is-active"><a href="/" class="language-link is-active" hreflang="en" data-drupal-link-system-path="&lt;front&gt;">English</a></li><li hreflang="pa" data-drupal-link-system-path="&lt;front&gt;" class="pa"><a href="/pa" class="language-link" hreflang="pa" data-drupal-link-system-path="&lt;front&gt;">پشتو</a></li><li hreflang="fa" data-drupal-link-system-path="&lt;front&gt;" class="fa"><a href="/fa" class="language-link" hreflang="fa" data-drupal-link-system-path="&lt;front&gt;">فارسی</a></li></ul>
+
+        <div class="top-calendar hidden-onmobile">Wednesday 9 Jul 2025</div>
+  
+
+                        </div>
+						
+                    </div>
+                      
+<nav>
+        <ul class="nav navbar-nav clearfix">
+                  <li class="lvl1">
+                  <a href="/" title="Home" data-drupal-link-system-path="&lt;front&gt;" class="is-active">Home</a>
+                        </li>
+                <li class="lvl1">
+                  <a href="/afghanistan" title="Afghanistan" data-drupal-link-system-path="taxonomy/term/31">Afghanistan</a>
+                      <div class="dropdown-menu">
+              <div class="inner-container">
+                <div class="one-col">
+                  <h2 class="red">Afghanistan</h2>
+                  <ul class="list-menu">
+                    <li><a href="/afghanistan/all" title="">All</a></li>
+                                                                  <li><a href="/afghanistan/attack-mediajournalists" title="Attack on Media/Journalists" data-drupal-link-system-path="taxonomy/term/35509">ATTACK ON MEDIA/JOURNALISTS</a></li>
+                                              <li><a href="/afghanistan/kabul-university-attack" title="Kabul University Attack" data-drupal-link-system-path="taxonomy/term/35325">KABUL UNIVERSITY ATTACK</a></li>
+                                              <li><a href="/100-years-afghan-german-relations" title="100 Years of Afghan-German Relations" data-drupal-link-system-path="taxonomy/term/516">100 YEARS OF AFGHAN-GERMAN RELATIONS</a></li>
+                                              <li><a href="/afghanistan/brussels-updates" title="Brussels Commitments" data-drupal-link-system-path="taxonomy/term/521">BRUSSELS COMMITMENTS</a></li>
+                                              <li><a href="/chabahar-port-project" title="Chabahar Port Project" data-drupal-link-system-path="taxonomy/term/519">CHABAHAR PORT PROJECT</a></li>
+                                              <li><a href="/afghanistan/parliament" title="Parliament" data-drupal-link-system-path="taxonomy/term/36">PARLIAMENT</a></li>
+                                              <li><a href="/afghanistan/provincial" title="Provincial" data-drupal-link-system-path="taxonomy/term/41">PROVINCIAL</a></li>
+                                              <li><a href="/salma-dam-project" title="Salma Dam Project" data-drupal-link-system-path="taxonomy/term/518">SALMA DAM PROJECT</a></li>
+                                              <li><a href="/tapi-pipeline-project" title="TAPI Pipeline Project" data-drupal-link-system-path="taxonomy/term/517">TAPI PIPELINE PROJECT</a></li>
+                                              <li><a href="/two-years-nug" title="Two Years of NUG" data-drupal-link-system-path="taxonomy/term/520">TWO YEARS OF NUG</a></li>
+                                              <li><a href="http://govmeter.tolonews.com" title="Govmeter">GOVMETER</a></li>
+                                              <li><a href="/afghanistan/budget" title="Budget" data-drupal-link-system-path="taxonomy/term/27851">BUDGET</a></li>
+                                                            </ul>
+                </div>
+                                <div class="two-col last-col">
+                  <ul class="row full-width-col-mobile list-post ">
+                    <span class='tolonews-ajax-view hide'
+			data-name="articles"
+			data-display="category_articles"
+			data-params="[&quot;31&quot;]"
+			></span>
+
+                  </ul>
+                </div>
+                              </div>
+            </div>
+                        </li>
+                <li class="lvl1">
+                  <a href="/world" title="World" data-drupal-link-system-path="taxonomy/term/1">World</a>
+                      <div class="dropdown-menu">
+              <div class="inner-container">
+                <div class="one-col">
+                  <h2 class="red">World</h2>
+                  <ul class="list-menu">
+                    <li><a href="/world/all" title="">All</a></li>
+                                                                  <li><a href="/international" title="International" data-drupal-link-system-path="taxonomy/term/16361">INTERNATIONAL</a></li>
+                                              <li><a href="/regional" title="Regional" data-drupal-link-system-path="taxonomy/term/16356">REGIONAL</a></li>
+                                                            </ul>
+                </div>
+                                <div class="two-col last-col">
+                  <ul class="row full-width-col-mobile list-post ">
+                    <span class='tolonews-ajax-view hide'
+			data-name="articles"
+			data-display="category_articles"
+			data-params="[&quot;1&quot;]"
+			></span>
+
+                  </ul>
+                </div>
+                              </div>
+            </div>
+                        </li>
+                <li class="lvl1">
+                  <a href="/business" title="Business" data-drupal-link-system-path="taxonomy/term/26">Business</a>
+                      <div class="dropdown-menu">
+              <div class="inner-container">
+                <div class="one-col">
+                  <h2 class="red">Business</h2>
+                  <ul class="list-menu">
+                    <li><a href="/business/all" title="">All</a></li>
+                                      </ul>
+                </div>
+                                <div class="two-col last-col">
+                  <ul class="row full-width-col-mobile list-post ">
+                    <span class='tolonews-ajax-view hide'
+			data-name="articles"
+			data-display="category_articles"
+			data-params="[&quot;26&quot;]"
+			></span>
+
+                  </ul>
+                </div>
+                              </div>
+            </div>
+                        </li>
+                <li class="lvl1">
+                  <a href="/video" title="Video" data-drupal-link-system-path="video">Video</a>
+                      <div class="dropdown-menu">
+              <div class="inner-container">
+                <div class="one-col">
+                  <h2 class="red">Video</h2>
+                  <ul class="list-menu">
+                    <li><a href="/video/all" title="">All</a></li>
+                                                                  <li><a href="/video/nightly-news" title="Nightly News" data-drupal-link-system-path="taxonomy/term/16151">NIGHTLY NEWS</a></li>
+                                              <li><a href="/video/farakhabar" title="Farakhabar" data-drupal-link-system-path="taxonomy/term/376">FARAKHABAR</a></li>
+                                              <li><a href="/video/news-hour" title="News Hour" data-drupal-link-system-path="taxonomy/term/16146">NEWS HOUR</a></li>
+                                              <li><a href="/video/elections" title="Elections" data-drupal-link-system-path="taxonomy/term/25211">ELECTIONS</a></li>
+                                              <li><a href="/video/goftman" title="Goftman" data-drupal-link-system-path="taxonomy/term/374">GOFTMAN</a></li>
+                                              <li><a href="/video/jahan-nama" title="Jahan Nama" data-drupal-link-system-path="taxonomy/term/523">JAHAN NAMA</a></li>
+                                              <li><a href="/video/mehwar" title="Mehwar" data-drupal-link-system-path="taxonomy/term/375">MEHWAR</a></li>
+                                              <li><a href="/video/kankash" title="Kankash" data-drupal-link-system-path="taxonomy/term/372">KANKASH</a></li>
+                                              <li><a href="/video/nima-rooz" title="Nima Rooz" data-drupal-link-system-path="taxonomy/term/522">NIMA ROOZ</a></li>
+                                              <li><a href="/video/tawde-khabare-0" title="Tawde Khabare" data-drupal-link-system-path="taxonomy/term/377">TAWDE KHABARE</a></li>
+                                              <li><a href="/video/miscellaneous" title="Must See Vidoes" data-drupal-link-system-path="taxonomy/term/373">MUST SEE VIDOES</a></li>
+                                              <li><a href="/video/music-videos" title="People Voice" data-drupal-link-system-path="taxonomy/term/131">PEOPLE VOICE</a></li>
+                                              <li><a href="/video/dahlezha" title="Dahlezha" data-drupal-link-system-path="taxonomy/term/14291">DAHLEZHA</a></li>
+                                              <li><a href="/video/six-thirty-report" title="6:30 Report" data-drupal-link-system-path="taxonomy/term/14296">6:30 REPORT</a></li>
+                                              <li><a href="/video/purso-pal" title="Purso Pal" data-drupal-link-system-path="taxonomy/term/14431">PURSO PAL</a></li>
+                                              <li><a href="/video/bazar" title="Bazar" data-drupal-link-system-path="taxonomy/term/20996">BAZAR</a></li>
+                                              <li><a href="/video/afghan-life" title="Afghan Life" data-drupal-link-system-path="taxonomy/term/36694">AFGHAN LIFE</a></li>
+                                                            </ul>
+                </div>
+                                <div class="two-col last-col">
+                  <ul class="row full-width-col-mobile list-post ">
+                    <span class='tolonews-ajax-view hide'
+			data-name="articles"
+			data-display="category_videos"
+			data-params=""
+			></span>
+
+                  </ul>
+                </div>
+                              </div>
+            </div>
+                        </li>
+                <li class="lvl1">
+                  <a href="/sports" title="Sport" data-drupal-link-system-path="taxonomy/term/6">Sport</a>
+                      <div class="dropdown-menu">
+              <div class="inner-container">
+                <div class="one-col">
+                  <h2 class="red">Sport</h2>
+                  <ul class="list-menu">
+                    <li><a href="/sports/all" title="">All</a></li>
+                                      </ul>
+                </div>
+                                <div class="two-col last-col">
+                  <ul class="row full-width-col-mobile list-post ">
+                    <span class='tolonews-ajax-view hide'
+			data-name="articles"
+			data-display="category_articles"
+			data-params="[&quot;6&quot;]"
+			></span>
+
+                  </ul>
+                </div>
+                              </div>
+            </div>
+                        </li>
+                <li class="lvl1">
+                  <a href="/arts-culture" title="Arts &amp; Culture" data-drupal-link-system-path="taxonomy/term/21">Arts &amp; Culture</a>
+                      <div class="dropdown-menu">
+              <div class="inner-container">
+                <div class="one-col">
+                  <h2 class="red">Arts &amp; Culture</h2>
+                  <ul class="list-menu">
+                    <li><a href="/arts-culture/all" title="">All</a></li>
+                                                                  <li><a href="/hollywood-bollywood" title="Hollywood &amp; Bollywood" data-drupal-link-system-path="taxonomy/term/16236">HOLLYWOOD &amp; BOLLYWOOD</a></li>
+                                              <li><a href="/biennale" title="Kabul Photo Biennale 2017" data-drupal-link-system-path="biennale">KABUL PHOTO BIENNALE 2017</a></li>
+                                                            </ul>
+                </div>
+                                <div class="two-col last-col">
+                  <ul class="row full-width-col-mobile list-post ">
+                    <span class='tolonews-ajax-view hide'
+			data-name="articles"
+			data-display="category_articles"
+			data-params="[&quot;21&quot;]"
+			></span>
+
+                  </ul>
+                </div>
+                              </div>
+            </div>
+                        </li>
+                <li class="lvl1">
+                  <a href="/health" title="Health" data-drupal-link-system-path="taxonomy/term/34603">Health</a>
+                      <div class="dropdown-menu">
+              <div class="inner-container">
+                <div class="one-col">
+                  <h2 class="red">Health</h2>
+                  <ul class="list-menu">
+                    <li><a href="/health/all" title="">All</a></li>
+                                      </ul>
+                </div>
+                                <div class="two-col last-col">
+                  <ul class="row full-width-col-mobile list-post ">
+                    <span class='tolonews-ajax-view hide'
+			data-name="articles"
+			data-display="category_articles"
+			data-params="[&quot;34603&quot;]"
+			></span>
+
+                  </ul>
+                </div>
+                              </div>
+            </div>
+                        </li>
+                <li class="lvl1">
+                  <a href="/opinion" title="Opinion" data-drupal-link-system-path="taxonomy/term/51">Opinion</a>
+                      <div class="dropdown-menu">
+              <div class="inner-container">
+                <div class="one-col">
+                  <h2 class="red">Opinion</h2>
+                  <ul class="list-menu">
+                    <li><a href="/opinion/all" title="">All</a></li>
+                                      </ul>
+                </div>
+                                <div class="two-col last-col">
+                  <ul class="row full-width-col-mobile list-post ">
+                    <span class='tolonews-ajax-view hide'
+			data-name="articles"
+			data-display="category_articles"
+			data-params="[&quot;51&quot;]"
+			></span>
+
+                  </ul>
+                </div>
+                              </div>
+            </div>
+                        </li>
+      </ul>
+    
+</nav>
+
+</ul>
+
+
+
+                    <!-- show in mobile show-in-mobile -->
+                    <div class="top-navigation clearfix show-in-mobile">
+                          <ul>
+      <li><a href="/about-us" data-drupal-link-system-path="node/36">About Us</a></li>
+      <li><a href="/contact" data-drupal-link-system-path="contact">Contact</a></li>
+      <li><a href="/newsletter" title="" id="" name="" rel="" style="" target="" accesskey="" data-drupal-link-system-path="newsletter">Newsletter</a></li>
+  </ul>
+
+<ul class="language"><li hreflang="en" data-drupal-link-system-path="&lt;front&gt;" class="en bold is-active"><a href="/" class="language-link is-active" hreflang="en" data-drupal-link-system-path="&lt;front&gt;">English</a></li><li hreflang="pa" data-drupal-link-system-path="&lt;front&gt;" class="pa"><a href="/pa" class="language-link" hreflang="pa" data-drupal-link-system-path="&lt;front&gt;">پشتو</a></li><li hreflang="fa" data-drupal-link-system-path="&lt;front&gt;" class="fa"><a href="/fa" class="language-link" hreflang="fa" data-drupal-link-system-path="&lt;front&gt;">فارسی</a></li></ul>
+
+        <div class="top-calendar hidden-onmobile">Wednesday 9 Jul 2025</div>
+  
+
+                    </div>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+        <div class="bar-container">
+                    </div>
+    </div>
+     
+	 <div class="news-bar latest show">
+        <div class="inner-container news">
+            <div class="latest">Latest news</div>
+            <div class="news-items">
+                          <span class='tolonews-ajax-view hide'
+			data-name="breaking_news"
+			data-display="latest_news"
+			data-params=""
+			></span>
+
+  
+
+            </div>
+        </div>
+    </div>
+	
+</header>
+
+
+<div  id="wrapper" class="wrapper clearfix">
+
+
+    
+
+      
+
+
+
+
+    
+
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content">
+                  <div class="panel-display panel-homepage clearfix" >
+  <div class="visible-onlymobile">
+    <div class="block-region-topmobile">        <div><div class="top-post-tolonews clearfix view view-articles view-id-articles view-display-id-main_article_mobile js-view-dom-id-da1dbf1b3f5b465a6631dd226092ebb41811237af7786900fdba5d5dd53c1c88">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row">
+    
+<div class="views-field views-field-field-article-main-image">
+  <div class="field-content">
+      <a href="/business-195167"><img src="/sites/default/files/styles/principal_article_image/public/2025-07/New%20Project%20%281%29_1.png?itok=2qreCQbM" width="440" height="295" alt="Thumbnail" typeof="foaf:Image" class="image-style-principal-article-image" />
+
+</a>
+
+  </div>
+</div>
+
+<div class="content-top-post-tolonews">
+    <h2 class="grey-dark1 title-top-post-tolonews"><a href="/business-195167" hreflang="en">Afghan Dried Fruit Exporters Warn of Unprecedented Challenges</a></h2>
+  <div class="part-left full-width-col-mobile grey-dark4">
+        <p>According to them, the absence of a clear export plan, high costs, and delays in the processing of export documentation have posed serious obstacles to the trade.</p>
+        <span class="field-content post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 9:12 AM","yesterday":"YESTERDAY - 9:12 AM","simple":"26 JULY 2025","timestamp":1753504933}'></span></span>
+  </div>
+</div>
+
+  </div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+  </div>
+  <div class="inner-container marginRow">
+    <div class="row clearfix">
+      <div class="two-col full-width-col-mobile full-width-col-tablets">
+        <div class="block-region-topleft">        <div><div class="top-post-tolonews hidden-onmobile clearfix view view-articles view-id-articles view-display-id-main_article js-view-dom-id-078543ee93964e3b9e251e9dd59c4570f2f8723fcd6ae237598c0d5db430ac54">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row">
+    
+<h2 class="grey-dark1 title-top-post-tolonews"><a href="/business-195167" hreflang="en">Afghan Dried Fruit Exporters Warn of Unprecedented Challenges</a></h2>
+<div class="part-left full-width-col-mobile grey-dark4">
+    <p>According to them, the absence of a clear export plan, high costs, and delays in the processing of export documentation have posed serious obstacles to the trade.</p>
+    <span class="field-content post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 9:12 AM","yesterday":"YESTERDAY - 9:12 AM","simple":"26 JULY 2025","timestamp":1753504933}'></span></span>
+    <div class="views-element-container"><div class="related-news clearfix view view-article-single view-id-article_single view-display-id-related_stories_main js-view-dom-id-a16f491e8b8e4f4e411ee1f691c443dd90da5c0bb93d0d107a5fa69a29b54e6b">
+  
+    
+      <div class="view-header">
+      <h3 class="views-label views-label-nothing red uppercase-txt">Related News</h3>
+
+    </div>
+      
+      <div class="view-content">
+      <div>
+  
+  <ul class="item-list">
+
+          <li><a href="/business-194907">Afghanistan Exports Detergents to Europe for First Time<i class="fa fa-angle-right red"></i></a></li>
+          <li><a href="/business-194172">Afghan Exporters Urge Action as India Keeps Wagah Trade Route Closed<i class="fa fa-angle-right red"></i></a></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+</div>
+<div class="views-field views-field-field-article-main-image part-right full-width-col-mobile">
+    <a href="/business-195167"><img src="/sites/default/files/styles/principal_article_image/public/2025-07/New%20Project%20%281%29_1.png?itok=2qreCQbM" width="440" height="295" alt="Thumbnail" typeof="foaf:Image" class="image-style-principal-article-image" />
+
+</a>
+
+</div>
+
+  </div>
+
+    </div>
+  
+          </div>
+</div>
+
+          <div><div class="featured clearfix view view-articles view-id-articles view-display-id-featured_news js-view-dom-id-7a4818949a9f61c5ea63c22f42b61acf6309af02385a5b36d2321042f596d8a6">
+  
+    
+      <div class="view-header">
+      <div class="container-top-post line line-grey"><h2 class="uppercase-txt title-category">Latest news</h2>
+<a class="view-all-post grey-light5" href="afghanistan/all">View More News</a>
+ </div>
+    </div>
+      
+      <div class="view-content">
+      <div>
+  
+  <ul class="row full-width-col-mobile list-post">
+
+                <li class="one-col"><article class="post-tolonews bar-bottom">
+      <div class="container-image">
+                <a href="/world-195168"><img src="/sites/default/files/styles/also_in_the_news_image/public/2025-07/New%20Project%20%282%29_1.png?itok=ugw8SRHd" width="310" height="206" alt="Thumbnail" typeof="foaf:Image" class="image-style-also-in-the-news-image" />
+
+</a>
+
+          </div>
+    <div class="content-article">
+              <h3 class="title-article"><a href="/world-195168" hreflang="en">Israel, U.S. Quit Talks; Hamas Calls It Pressure Tactic</a></h3>
+        <p class="hidden-onmobile">Experts warn Gaza is being pushed closer to famine, after months of Israel entirely blocking food or letting in only limited amounts.</p>
+            <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 11:39 AM","yesterday":"YESTERDAY - 11:39 AM","simple":"26 JULY 2025","timestamp":1753513795}'></span></span>
+    </div>
+  </article>
+</li>
+                <li class="one-col last-col"><article class="post-tolonews bar-bottom">
+      <div class="container-image">
+                <a href="/afghanistan-195166"><img src="/sites/default/files/styles/also_in_the_news_image/public/2025-07/New%20Project_1.png?itok=MnGmrwCf" width="310" height="206" alt="Thumbnail" typeof="foaf:Image" class="image-style-also-in-the-news-image" />
+
+</a>
+
+          </div>
+    <div class="content-article">
+              <h3 class="title-article"><a href="/afghanistan-195166" hreflang="en">Beijing Pledges Continued Backing for Kabul</a></h3>
+        <p class="hidden-onmobile">Amir Khan Muttaqi expressed appreciation for China’s support, especially in the economic sector, calling it a promising step toward a…</p>
+            <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 9:17 AM","yesterday":"YESTERDAY - 9:17 AM","simple":"26 JULY 2025","timestamp":1753505230}'></span></span>
+    </div>
+  </article>
+</li>
+                <li class="one-col">  <article class="post-tolonews small-column">
+        <div class="container-image">
+                <a href="/world-195158"><img src="/sites/default/files/styles/more_section_news/public/2025-07/New%20Project%20-%202025-07-25T191435.287.png?itok=_am5d070" width="147" height="98" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-more-section-news" />
+
+</a>
+
+          </div>
+    <div class="content-article">
+              <h4><a href="/world-195158" hreflang="en">WHO Warns of Severe Child Malnutrition Amid Gaza Aid Crisis</a></h4>
+            <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 8:55 PM","yesterday":"YESTERDAY - 8:55 PM","simple":"25 JULY 2025","timestamp":1753460729}'></span></span>
+    </div>
+  </article>
+</li>
+                <li class="one-col last-col">  <article class="post-tolonews small-column">
+        <div class="container-image">
+                <a href="/afghanistan-195159"><img src="/sites/default/files/styles/more_section_news/public/2025-07/New%20Project%20-%202025-07-25T192537.819.png?itok=nZG2eXQU" width="147" height="98" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-more-section-news" />
+
+</a>
+
+          </div>
+    <div class="content-article">
+              <h4><a href="/afghanistan-195159" hreflang="en">Pakistan-Afghanistan Relations Show Signs of Improvement</a></h4>
+            <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 8:57 PM","yesterday":"YESTERDAY - 8:57 PM","simple":"25 JULY 2025","timestamp":1753460835}'></span></span>
+    </div>
+  </article>
+</li>
+                <li class="one-col">  <article class="post-tolonews small-column">
+        <div class="container-image">
+                <a href="/afghanistan-195160"><img src="/sites/default/files/styles/more_section_news/public/2025-07/New%20Project%20-%202025-07-25T193131.561.png?itok=X6PtiwaY" width="147" height="98" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-more-section-news" />
+
+</a>
+
+          </div>
+    <div class="content-article">
+              <h4><a href="/afghanistan-195160" hreflang="en">Free Transport Eases Return for Afghans Deported from Iran</a></h4>
+            <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 8:58 PM","yesterday":"YESTERDAY - 8:58 PM","simple":"25 JULY 2025","timestamp":1753460926}'></span></span>
+    </div>
+  </article>
+</li>
+                <li class="one-col last-col">  <article class="post-tolonews small-column">
+        <div class="container-image">
+                <a href="/afghanistan-195163"><img src="/sites/default/files/styles/more_section_news/public/2025-07/New%20Project%20-%202025-07-25T201550.613.png?itok=UuuSKJnO" width="147" height="98" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-more-section-news" />
+
+</a>
+
+          </div>
+    <div class="content-article">
+              <h4><a href="/afghanistan-195163" hreflang="en">EU and Japan Voice Concern Over Human Rights in Afghanistan</a></h4>
+            <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 9:26 PM","yesterday":"YESTERDAY - 9:26 PM","simple":"25 JULY 2025","timestamp":1753462613}'></span></span>
+    </div>
+  </article>
+</li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+        <nav class="pager--load-more" role="navigation" aria-labelledby="pagination-heading">
+          <ul class="pager__items js-pager__items load-more-post centered uppercase-txt visible-onlymobile">
+        <li class="pager__item">
+          <a href="/front?page=0%2C1%2C0%2C0%2C0" class="red bold">Load more</a>
+        </li>
+      </ul>
+      </nav>
+
+          </div>
+</div>
+
+  </div>
+      </div>
+      <div class="one-col full-width-col-tablets full-width-col-mobile last-col">
+        <div class="block-region-topright">        <div><div class="equal-top-first list-item-widget clearfix bar-bottom hidden-ontablets hidden-onmobile view view-articles view-id-articles view-display-id-top_stories js-view-dom-id-2125167756282daebf16e99921c1aa89ab461e07eb3a98548ce7d07fd6aa79a6">
+  
+    
+      <div class="view-header">
+      <h3 class="uppercase-txt line line-red red">Top stories</h3>
+    </div>
+      
+      <div class="view-content">
+      <div>
+  
+  <ul class="grey-box list-item">
+
+          <li>
+<a href="/world-195158">
+  <span class="number grey-light3">
+    1
+  </span>
+  <span class="content">
+    WHO Warns of Severe Child Malnutrition Amid Gaza Aid Crisis
+    <i class="fa fa-angle-right red"></i>
+  </span>
+</a>
+</li>
+          <li>
+<a href="/afghanistan-195157">
+  <span class="number grey-light3">
+    2
+  </span>
+  <span class="content">
+    Zalmay Khalilzad: “A Solution Must Be Found for the Durand Line”
+    <i class="fa fa-angle-right red"></i>
+  </span>
+</a>
+</li>
+          <li>
+<a href="/health-195154">
+  <span class="number grey-light3">
+    3
+  </span>
+  <span class="content">
+    Surge in Seasonal Illnesses Among Children Amid Record Heat in Afghanistan
+    <i class="fa fa-angle-right red"></i>
+  </span>
+</a>
+</li>
+          <li>
+<a href="/afghanistan-195145">
+  <span class="number grey-light3">
+    4
+  </span>
+  <span class="content">
+    UN Concerned Over Afghan Migrants; Islamic Emirate Denies Retaliation
+    <i class="fa fa-angle-right red"></i>
+  </span>
+</a>
+</li>
+          <li>
+<a href="/afghanistan-195143">
+  <span class="number grey-light3">
+    5
+  </span>
+  <span class="content">
+    Uzbekistan’s Commitment to Strengthening Ties with Afghanistan
+    <i class="fa fa-angle-right red"></i>
+  </span>
+</a>
+</li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+        <div class="equal-top box-video hidden-onmobile twoo-column-tablets">
+          <div class="block-region-topright-6pm">        <div><div class="view view-videos view-id-videos view-display-id-6pm_bulletin js-view-dom-id-3df71cad5b87844470b2c3376a4a4f6411de5e7bc6f7b9f9a3bbe1787316cc6c">
+  
+    
+      <div class="view-header">
+      <h3 class="uppercase-txt line line-grey-dark grey-dark1">6pm Bulletin</h3>
+    </div>
+      
+      <div class="view-content">
+          <div class="box-medium-video grey-box clearfix bar-bottom views-row">
+    <div class="field-content video">    <a href="/nightly-news-195161">
+        <img src="/sites/default/files/styles/6pm_bulletin_thumbnail/public/video_thumbnails/p4mjDk3smvw.jpg?itok=gvVOnzpD" width="280" height="187" alt="" typeof="Image" class="image-style-_pm-bulletin-thumbnail" />
+
+
+        <div class="play"><i class="medium fa fa-play"></i></div>
+    </a>
+</div><h3 class="field-content title">TOLOnews - 6pm News - 25 July 2025</h3><div class="field-content text-vds">While the World Health Organization has warned about the rising…</div>
+  </div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+        </div>
+        <div class="box grey-box equal-top-pub twoo-column-tablets last pub">
+          <div class="block-region-topright-add">        <!-- adsense: adsense disabled. -->
+  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row grey-dark marginRow">
+    <div class="inner-container row-watch-tolo">
+      <div class="container-top-post line line-grey clearfix">
+        <h2 class="title-category  uppercase-txt">Watch</h2>
+        <a href="/video" class="view-all-post grey-light5">View all videos</a>
+      </div>
+      <div class="block-region-watch">        <div><div class="two-col full-width-col-tablets hidden-onmobile content-watch-tolo view view-videos view-id-videos view-display-id-top_videos_1 js-view-dom-id-a255d1873e8d40bfff0c94b8f93e8d2a4a3c88a7499fee94cf5de457a025d2e8">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row">
+    <div class="container-video-cover"><div class="video-hidden hidden"><iframe width="650" height="365" frameborder="0" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/p4mjDk3smvw?autoplay=0&amp;start=0&amp;rel=0"></iframe>
+</div>
+<div class="block-video-play video"><img src="/sites/default/files/styles/watch_video/public/video_thumbnails/p4mjDk3smvw.jpg?itok=JWc62g3s" width="650" height="365" alt="" typeof="foaf:Image" class="image-style-watch-video" />
+
+<i class="big-play fa fa-play play"></i>
+</div>
+</div>
+<div class="info">
+<h3><a href="/nightly-news-195161">TOLOnews - 6pm News - 25 July 2025</a></h3>
+<span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 7:43 PM","yesterday":"YESTERDAY - 7:43 PM","simple":"25 JULY 2025","timestamp":1753456388}'></span></span>
+</div>
+  </div>
+
+    </div>
+  
+          </div>
+</div>
+
+          <div><div class="one-col last-col full-width-col-tablets thumbs-watch-tolo full-width-col-mobile view view-videos view-id-videos view-display-id-top_videos_4 js-view-dom-id-b3b013d887bdc5c2a7ecd5e63acb7ea60b97e427a88cfd2469a6165d7e1059fa">
+  
+    
+      <div class="view-header">
+      <h3 class="uppercase-txt hidden-onmobile">Top videos</h3>
+    </div>
+      
+      <div class="view-content">
+      <div>
+  
+  <ul>
+
+                                    <li class="post-tolonews video-thumbnail small-column visible-onlymobile"><a href="/nightly-news-195161">
+  <div class="container-image">
+<img src="/sites/default/files/styles/top_videos_thumbnail/public/video_thumbnails/p4mjDk3smvw.jpg?itok=OSqZafa8" width="100" height="67" alt="" typeof="Image" class="image-style-top-videos-thumbnail" />
+
+
+<i class="small-play fa fa-play"></i>
+</div><div class="content-article">
+<p>TOLOnews - 6pm News - 25 July 2025</p>
+<span class="post-date grey-light3 time grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 7:43 PM","yesterday":"YESTERDAY - 7:43 PM","simple":"25 JULY 2025","timestamp":1753456388}'></span></span>
+</div></a>
+</li>
+                      <li class="post-tolonews video-thumbnail small-column"><a href="/farakhabar-195162">
+  <div class="container-image">
+<img src="/sites/default/files/styles/top_videos_thumbnail/public/video_thumbnails/Cx1TDLmqZVI.jpg?itok=axmsurWp" width="100" height="67" alt="" typeof="Image" class="image-style-top-videos-thumbnail" />
+
+
+<i class="small-play fa fa-play"></i>
+</div><div class="content-article">
+<p>FARAKHABAR - Silent Death in Gaza: Why Is the Islamic World Watching?</p>
+<span class="post-date grey-light3 time grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 7:56 PM","yesterday":"YESTERDAY - 7:56 PM","simple":"25 JULY 2025","timestamp":1753457211}'></span></span>
+</div></a>
+</li>
+                                    <li class="post-tolonews video-thumbnail small-column hidden-onmobile"><a href="/nightly-news-195147">
+  <div class="container-image">
+<img src="/sites/default/files/styles/top_videos_thumbnail/public/video_thumbnails/Bzpla5ujDH8.jpg?itok=GddavELG" width="100" height="67" alt="" typeof="Image" class="image-style-top-videos-thumbnail" />
+
+
+<i class="small-play fa fa-play"></i>
+</div><div class="content-article">
+<p>TOLOnews - 6pm News - 24 July 2025</p>
+<span class="post-date grey-light3 time grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 8:32 PM","yesterday":"YESTERDAY - 8:32 PM","simple":"24 JULY 2025","timestamp":1753372945}'></span></span>
+</div></a>
+</li>
+                                    <li class="post-tolonews video-thumbnail small-column hidden-onmobile"><a href="/farakhabar-195148">
+  <div class="container-image">
+<img src="/sites/default/files/styles/top_videos_thumbnail/public/video_thumbnails/JRQ5_KRdd0A.jpg?itok=6NYvc4O9" width="100" height="67" alt="" typeof="Image" class="image-style-top-videos-thumbnail" />
+
+
+<i class="small-play fa fa-play"></i>
+</div><div class="content-article">
+<p>FARAKHABAR: Qani Speaks on Haqqani’s Hosting of Regional Security Officials</p>
+<span class="post-date grey-light3 time grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 8:41 PM","yesterday":"YESTERDAY - 8:41 PM","simple":"24 JULY 2025","timestamp":1753373494}'></span></span>
+</div></a>
+</li>
+                                    <li class="post-tolonews video-thumbnail small-column hidden-onmobile"><a href="/tawde-khabare-195153">
+  <div class="container-image">
+<img src="/sites/default/files/styles/top_videos_thumbnail/public/video_thumbnails/NII4whyesiw.jpg?itok=Nd7E6aDM" width="100" height="67" alt="" typeof="Image" class="image-style-top-videos-thumbnail" />
+
+
+<i class="small-play fa fa-play"></i>
+</div><div class="content-article">
+<p>TAWDIKHABARI - Global Silence Over Starvation in Gaza Highlighted</p>
+<span class="post-date grey-light3 time grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 10:56 PM","yesterday":"YESTERDAY - 10:56 PM","simple":"24 JULY 2025","timestamp":1753381602}'></span></span>
+</div></a>
+</li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+    </div>
+  </div>
+  <div class="row hidden-onmobile">
+    <div class="inner-container fullWidth-pub  marginRow centered">
+         <div class="block-region-bottomad">        <!-- adsense: adsense disabled. -->
+  </div>
+    </div>
+  </div>
+  
+  <div class="row marginRow">
+    <div class="inner-container">
+      <div class="one-col full-width-col-tablets hidden-onmobile">
+        <div class="list-item-widget twoo-column-tablets bar-bottom">
+          <ul class="tabulations-tolo container-top-post no-margin line-red red">
+            <li class="titleBlock uppercase-txt">
+              <a href="#most-readed">Most read</a>
+            </li>
+            <li class="grey-light5 uppercase-txt">
+              <a href="#most-watched">Most watched</a>
+            </li>
+          </ul>
+          <div class="block-region-mostreadandwatched">        <div><div class="view view-articles view-id-articles view-display-id-most_read js-view-dom-id-a2b35e5a46bfdee4cfd712231210050027768f89a29a7c2e4b2861a217ac1e06">
+  
+    
+      
+      <div class="view-content">
+      <div>
+    
+  <ul class="grey-box list-item" id="most-readed">
+
+      <li>
+<a href="/afghanistan-195145">
+  <span class="number grey-light3">
+    1
+  </span>
+  <span class="content">
+    UN Concerned Over Afghan Migrants; Islamic Emirate Denies Retaliation
+    <i class="fa fa-angle-right red"></i>
+  </span>
+</a>
+</li>
+      <li>
+<a href="/index.ph%70/world-195158">
+  <span class="number grey-light3">
+    2
+  </span>
+  <span class="content">
+    WHO Warns of Severe Child Malnutrition Amid Gaza Aid Crisis
+    <i class="fa fa-angle-right red"></i>
+  </span>
+</a>
+</li>
+      <li>
+<a href="/afghanistan-195146">
+  <span class="number grey-light3">
+    3
+  </span>
+  <span class="content">
+    Qatar Praised for Constructive Role in Afghanistan’s Global Engagement
+    <i class="fa fa-angle-right red"></i>
+  </span>
+</a>
+</li>
+      <li>
+<a href="/afghanistan-195159">
+  <span class="number grey-light3">
+    4
+  </span>
+  <span class="content">
+    Pakistan-Afghanistan Relations Show Signs of Improvement
+    <i class="fa fa-angle-right red"></i>
+  </span>
+</a>
+</li>
+      <li>
+<a href="/afghanistan-195149">
+  <span class="number grey-light3">
+    5
+  </span>
+  <span class="content">
+    Qatar Offers 1,300 New Jobs for Afghan Workers
+    <i class="fa fa-angle-right red"></i>
+  </span>
+</a>
+</li>
+  
+</ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+          <div><div class="view view-videos view-id-videos view-display-id-most_watched js-view-dom-id-4d3980a627a3f127a12ca1f6b125f46874e3b191aee3b7812406d98cfd06d181">
+  
+    
+      
+      <div class="view-content">
+      <div>
+    
+  <ul class="grey-box list-item" id="most-watched">
+
+      <li><a href="/nightly-news-195147">
+<span class="number grey-light3">1</span>
+<span class="content">TOLOnews - 6pm News - 24 July 2025<i class="fa fa-angle-right red"></i></span>
+</a></li>
+      <li><a href="/farakhabar-195148">
+<span class="number grey-light3">2</span>
+<span class="content">FARAKHABAR: Qani Speaks on Haqqani’s Hosting of Regional Security Officials<i class="fa fa-angle-right red"></i></span>
+</a></li>
+      <li><a href="/tawde-khabare-195153">
+<span class="number grey-light3">3</span>
+<span class="content">TAWDIKHABARI - Global Silence Over Starvation in Gaza Highlighted<i class="fa fa-angle-right red"></i></span>
+</a></li>
+      <li><a href="/nightly-news-195161">
+<span class="number grey-light3">4</span>
+<span class="content">TOLOnews - 6pm News - 25 July 2025<i class="fa fa-angle-right red"></i></span>
+</a></li>
+      <li><a href="/farakhabar-195162">
+<span class="number grey-light3">5</span>
+<span class="content">FARAKHABAR - Silent Death in Gaza: Why Is the Islamic World Watching?<i class="fa fa-angle-right red"></i></span>
+</a></li>
+  
+</ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+        </div>
+        <div class="box-weather twoo-column-tablets last">
+          <div class="block-region-weather">        
+<h3 class="line bold uppercase-txt">Weather</h3>
+<div class="container-weather">
+    <div class="image-weather"><img
+                src="themes/custom/tolonews/html/images/image-meteo.jpg"
+                alt="image-meteo"
+                width="310" height="289"/></div>
+    <a href="https://www.accuweather.com/en/en/kabul/4361/weather-forecast/4361"
+       class="aw-widget-legal">
+    </a>
+    <div id="awcc1455525954273" class="aw-widget-current"
+         data-locationkey="4361" data-unit="c" data-language="en"
+         data-useip="false" data-uid="awcc1455525954273"></div>
+    <script type="text/javascript"
+            src="https://oap.accuweather.com/launch.js"></script>
+</div>
+
+  </div>
+        </div>
+      </div>
+      <div class="two-col last-col full-width-col-tablets full-width-col-mobile">
+        <div class="block-region-business">        <div><div class="view view-articles view-id-articles view-display-id-business js-view-dom-id-f1d311dcf385bf6fcfeab964660eb4087dbc8dd7e1b73a4d21ddcd6234bb8282">
+  
+    
+      <div class="view-header">
+      <div class="container-top-post line line-grey">
+  <h2 class="uppercase-txt title-category">Business </h2>
+  <a class="view-all-post grey-light5" href="https://tolonews.com/business">View all Business news</a>
+</div>
+    </div>
+      
+      <div class="view-content">
+      <div>
+  
+  <ul class="row full-width-col-mobile list-post">
+
+                <li class="one-col"><article class="post-tolonews bar-bottom">
+      <div class="container-image">
+                <a href="/business-195167"><img src="/sites/default/files/styles/also_in_the_news_image/public/2025-07/New%20Project%20%281%29_1.png?itok=HjsNVSAo" width="310" height="206" alt="Thumbnail" typeof="foaf:Image" class="image-style-also-in-the-news-image" />
+
+</a>
+
+          </div>
+    <div class="content-article">
+              <h3 class="title-article"><a href="/business-195167" hreflang="en">Afghan Dried Fruit Exporters Warn of Unprecedented Challenges</a></h3>
+        <p class="hidden-onmobile">According to them, the absence of a clear export plan, high costs, and delays in the processing of export documentation have posed…</p>
+            <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 9:12 AM","yesterday":"YESTERDAY - 9:12 AM","simple":"26 JULY 2025","timestamp":1753504933}'></span></span>
+    </div>
+  </article>
+</li>
+                <li class="one-col last-col"><article class="post-tolonews bar-bottom">
+      <div class="container-image">
+                <a href="/business-195155"><img src="/sites/default/files/styles/also_in_the_news_image/public/2025-07/vlcsnap-2025-07-25-06h51m11s312.png?itok=ZZsbRF5E" width="310" height="206" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-also-in-the-news-image" />
+
+</a>
+
+          </div>
+    <div class="content-article">
+              <h3 class="title-article"><a href="/business-195155" hreflang="en">Dozens of Mining Contracts Signed by Ministry Over the Past Year</a></h3>
+        <p class="hidden-onmobile">The Ministry of Mines and Petroleum added that more than 170,000 people are currently employed either directly or indirectly in the…</p>
+            <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 6:55 AM","yesterday":"YESTERDAY - 6:55 AM","simple":"25 JULY 2025","timestamp":1753410341}'></span></span>
+    </div>
+  </article>
+</li>
+                <li class="one-col">  <article class="post-tolonews small-column">
+        <div class="container-image">
+                <a href="/business-195141"><img src="/sites/default/files/styles/more_section_news/public/2025-07/vlcsnap-2025-07-24-06h47m26s378.png?itok=BtgUPCoU" width="147" height="98" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-more-section-news" />
+
+</a>
+
+          </div>
+    <div class="content-article">
+              <h4><a href="/business-195141" hreflang="en">Afghanistan and Pakistan Ink Preferential Trade Deal</a></h4>
+            <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 6:55 AM","yesterday":"YESTERDAY - 6:55 AM","simple":"24 JULY 2025","timestamp":1753323919}'></span></span>
+    </div>
+  </article>
+</li>
+                <li class="one-col last-col">  <article class="post-tolonews small-column">
+        <div class="container-image">
+                <a href="/business-195094"><img src="/sites/default/files/styles/more_section_news/public/2025-07/vlcsnap-2025-07-20-18h07m35s449.png?itok=pCjNujYy" width="147" height="98" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-more-section-news" />
+
+</a>
+
+          </div>
+    <div class="content-article">
+              <h4><a href="/business-195094" hreflang="en">Returning Afghan Launches Soap Factory in Kandahar</a></h4>
+            <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 6:13 PM","yesterday":"YESTERDAY - 6:13 PM","simple":"20 JULY 2025","timestamp":1753018993}'></span></span>
+    </div>
+  </article>
+</li>
+                <li class="one-col">  <article class="post-tolonews small-column">
+        <div class="container-image">
+                <a href="/index.php/business-195080"><img src="/sites/default/files/styles/more_section_news/public/2025-07/image_12.png?itok=Hj1BcOsq" width="147" height="98" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-more-section-news" />
+
+</a>
+
+          </div>
+    <div class="content-article">
+              <h4><a href="/index.php/business-195080" hreflang="en">Afghanistan Expands Trade with Over 100 Countries: Nooruddin Azizi</a></h4>
+            <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 6:55 PM","yesterday":"YESTERDAY - 6:55 PM","simple":"19 JULY 2025","timestamp":1752935133}'></span></span>
+    </div>
+  </article>
+</li>
+                <li class="one-col last-col">  <article class="post-tolonews small-column">
+        <div class="container-image">
+                <a href="/index.php/business-195007"><img src="/sites/default/files/styles/more_section_news/public/2025-07/image%20%282%29.png?itok=i_0LKUp_" width="147" height="98" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-more-section-news" />
+
+</a>
+
+          </div>
+    <div class="content-article">
+              <h4><a href="/index.php/business-195007" hreflang="en">18,000 Carats of Panjshir Emeralds Sold So Far In 1404</a></h4>
+            <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 10:47 AM","yesterday":"YESTERDAY - 10:47 AM","simple":"14 JULY 2025","timestamp":1752473825}'></span></span>
+    </div>
+  </article>
+</li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+        <nav class="pager--load-more" role="navigation" aria-labelledby="pagination-heading">
+          <ul class="pager__items js-pager__items load-more-post centered uppercase-txt visible-onlymobile">
+        <li class="pager__item">
+          <a href="/front?page=1%2C0%2C0%2C0%2C0" class="red bold">Load more</a>
+        </li>
+      </ul>
+      </nav>
+
+          </div>
+</div>
+
+  </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row marginRow">
+    <div class="inner-container">
+      	<div class="four-col twoo-col-ontablets last-col">      	 
+           
+      	</div>
+    </div>
+  </div>
+  
+  <div class="row marginRow">
+    <div class="inner-container">
+      	<div class="four-col twoo-col-ontablets last-col">      	 
+           <div class="block-region-journalistattack">        <div><div class="view view-articles view-id-articles view-display-id-journalistattack js-view-dom-id-8dd0bb3fff6815ee044464d04cab0ed5e4248c79c908583c8fb6233b15593d57">
+  
+    
+      <div class="view-header">
+      
+  <div  class="container-top-post line line-grey">
+  <h2  class="uppercase-txt title-category">
+    Attack on Media/Journalists 
+  </h2>
+      <a href="https://tolonews.com/afghanistan/attack-mediajournalists"  class="view-all-post grey-light5">View all Attack on Media/Journalists</a>
+  </div>
+
+    </div>
+      
+      <div class="view-content">
+      <div>
+  
+  <ul class="row full-width-col-mobile list-post equal-height">
+
+                              <li class="one-col">  <article class="post-tolonews bar-bottom medium-column">
+        <div class="container-image">
+        <a href="/index.php/afghanistan/attack-mediajournalists-194155"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-05/Press%20Freedom.png?itok=ezf4T48z" width="225" height="150" alt="Thumbnail" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/index.php/afghanistan/attack-mediajournalists-194155" hreflang="en">RSF Report: Press Freedom Hits Historic Low as Media Shutdowns Rise</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">The organization highlighted that 2025 is the first time in ten years that the global state of press freedom is officially classified as…</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 2:34 PM","yesterday":"YESTERDAY - 2:34 PM","simple":"02 MAY 2025","timestamp":1746180284}'></span></span>
+    </div>
+  </article>
+</li>
+                              <li class="two-col">  <article class="post-tolonews bar-bottom medium-column">
+        <div class="container-image">
+        <a href="/index.php/afghanistan/attack-mediajournalists-193493"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-03/vlcsnap-2025-03-17-19h51m52s862.png?itok=3XJGSJJO" width="225" height="150" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/index.php/afghanistan/attack-mediajournalists-193493" hreflang="en">Afghan Journalists Concerned Over Lack of Media Law</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">Meanwhile, the Ministry of Information and Culture reaffirmed the Islamic Emirate's commitment to supporting journalists and providing…</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 8:19 PM","yesterday":"YESTERDAY - 8:19 PM","simple":"17 MARCH 2025","timestamp":1742226545}'></span></span>
+    </div>
+  </article>
+</li>
+                              <li class="three-col">  <article class="post-tolonews bar-bottom medium-column">
+        <div class="container-image">
+        <a href="/index.php/afghanistan/attack-mediajournalists-193063"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-02/vlcsnap-2025-02-13-20h18m45s372.png?itok=29Ct7qTu" width="225" height="150" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/index.php/afghanistan/attack-mediajournalists-193063" hreflang="en">World Radio Day: A Medium That Remains Popular</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">                                  Over the years, radio has remained a reliable source of information in Afghanistan.&#13;
+&#13;
+</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 8:43 PM","yesterday":"YESTERDAY - 8:43 PM","simple":"13 FEBRUARY 2025","timestamp":1739463228}'></span></span>
+    </div>
+  </article>
+</li>
+                              <li class="four-col last-col"><article class="post-tolonews bar-bottom medium-column last">
+      <div class="container-image">
+        <a href="/afghanistan/attack-mediajournalists-192745"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-01/vlcsnap-2025-01-23-20h02m05s459.png?itok=6KDvHVGd" width="225" height="150" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/afghanistan/attack-mediajournalists-192745" hreflang="en">Media Coordination Efforts Highlighted in Kabul Program</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">          Khairkhwa stated that the Ministry of Information and Culture is working to resolve existing challenges facing media operations…</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 10:04 PM","yesterday":"YESTERDAY - 10:04 PM","simple":"23 JANUARY 2025","timestamp":1737653665}'></span></span>
+    </div>
+  </article>
+</li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+        <nav class="pager--load-more" role="navigation" aria-labelledby="pagination-heading">
+          <ul class="pager__items js-pager__items load-more-post centered uppercase-txt visible-onlymobile">
+        <li class="pager__item">
+          <a href="/front?page=0%2C0%2C0%2C0%2C1" class="red bold">Load more</a>
+        </li>
+      </ul>
+      </nav>
+
+          </div>
+</div>
+
+  </div>
+      	</div>
+    </div>
+  </div>
+
+
+  <div class="row marginRow">
+    <div class="inner-container">
+      	<div class="four-col twoo-col-ontablets last-col">      	 
+           <div class="block-region-health">        <div><div class="view view-articles view-id-articles view-display-id-health js-view-dom-id-d8b133fe584741a536e341d8ac84bcf1988bab17312d1abee7ba1280c02bedc4">
+  
+    
+      <div class="view-header">
+      
+  <div  class="container-top-post line line-grey">
+  <h2  class="uppercase-txt title-category">
+    Health 
+  </h2>
+      <a href="https://tolonews.com/health"  class="view-all-post grey-light5">View all Health news</a>
+  </div>
+
+    </div>
+      
+      <div class="view-content">
+      <div>
+  
+  <ul class="row full-width-col-mobile list-post equal-height">
+
+                              <li class="one-col">  <article class="post-tolonews bar-bottom medium-column">
+        <div class="container-image">
+        <a href="/health-195154"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-07/vlcsnap-2025-07-25-06h28m10s142.png?itok=oHEQ2YEH" width="225" height="150" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/health-195154" hreflang="en">Surge in Seasonal Illnesses Among Children Amid Record Heat in Afghanistan</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">Doctors report that acute diarrhea and physical weakness are the leading causes of admission for children under the age of five at this…</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 6:31 AM","yesterday":"YESTERDAY - 6:31 AM","simple":"25 JULY 2025","timestamp":1753408873}'></span></span>
+    </div>
+  </article>
+</li>
+                              <li class="two-col">  <article class="post-tolonews bar-bottom medium-column">
+        <div class="container-image">
+        <a href="/index.php/health-195075"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-07/New%20Project%20%288%29_0.png?itok=0lNX4kOY" width="225" height="150" alt="Thumbnail" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/index.php/health-195075" hreflang="en">Nutritional Emergency Threatens Afghan Children</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">    Meanwhile, a report from the United Nations Children’s Fund (UNICEF) states that one in two Afghan children suffers from malnutrition.</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 7:35 AM","yesterday":"YESTERDAY - 7:35 AM","simple":"19 JULY 2025","timestamp":1752894308}'></span></span>
+    </div>
+  </article>
+</li>
+                              <li class="three-col">  <article class="post-tolonews bar-bottom medium-column">
+        <div class="container-image">
+        <a href="/index.php/health-195061"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-07/vlcsnap-2025-07-18-06h55m39s466.png?itok=ohv8YBO4" width="225" height="150" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/index.php/health-195061" hreflang="en">Health Challenges Facing Deported Afghans at Borders and Camps</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">                                                    According to them, the heat has caused some to fall ill during the journey.&#13;
+&#13;
+&#13;
+</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 6:59 AM","yesterday":"YESTERDAY - 6:59 AM","simple":"18 JULY 2025","timestamp":1752805778}'></span></span>
+    </div>
+  </article>
+</li>
+                              <li class="four-col last-col"><article class="post-tolonews bar-bottom medium-column last">
+      <div class="container-image">
+        <a href="/health-195032"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-07/image%20%284%29.png?itok=4l8wlgba" width="225" height="150" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/health-195032" hreflang="en">Baghlan Residents Complain About High Prices and Poor-Quality Medicine</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">According to them, the continuous prescription of these medicines by doctors has had no positive effect on their treatment.&#13;
+</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 8:01 AM","yesterday":"YESTERDAY - 8:01 AM","simple":"16 JULY 2025","timestamp":1752636661}'></span></span>
+    </div>
+  </article>
+</li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+        <nav class="pager--load-more" role="navigation" aria-labelledby="pagination-heading">
+          <ul class="pager__items js-pager__items load-more-post centered uppercase-txt visible-onlymobile">
+        <li class="pager__item">
+          <a href="/front?page=0%2C0%2C0%2C0%2C1" class="red bold">Load more</a>
+        </li>
+      </ul>
+      </nav>
+
+          </div>
+</div>
+
+  </div>
+      	</div>
+    </div>
+  </div>
+		
+
+		
+  <div class="row marginRow">
+    <div class="inner-container">
+      <div class="one-col last-col full-width-col-tablets right-col full-width-col-mobile marginRow">
+        <div class="currency bar-bottom twoo-column-tablets hidden-onmobile">
+          <div class="block-region-currencyandad">        <div><div class="currency view view-currency view-id-currency view-display-id-currencies_front js-view-dom-id-3ea7fcaab82ed6852d9c71f1f798c72b5faddd8c6a5fad48e79daadb7945b86c">
+  
+    
+      <div class="view-header">
+      <div class="container-top-post no-margin line line-red red clearfix">
+  <h3 class="titleBlock uppercase-txt">Currency Rates</h3>
+  <span class="grey-light5 view-all-post">Last Report: <em class="placeholder">24.06.2025</em></span>
+</div>
+
+    </div>
+      
+      <div class="view-content">
+      <table class="cols-0 grey-box">
+      <tbody>
+      <tr>
+      <td class="space" width="20" height="20"></td>
+                                                                      <td class="views-field views-field-field-flag">  <img src="/sites/default/files/styles/currency/public/2016-11/usa-flag.jpg?itok=HjVvZOFe" width="33" height="25" alt="" typeof="foaf:Image" class="image-style-currency" />
+
+
+        </td>
+                                                                      <td class="views-field views-field-field-currency-rate">1 USD        </td>
+                                                                      <td class="price views-field views-field-field-currency-percentage">70.80AFN        </td>
+          </tr>
+      <tr>
+      <td class="space" width="20" height="20"></td>
+                                                                      <td class="views-field views-field-field-flag">  <img src="/sites/default/files/styles/currency/public/2016-11/ir%20%281%29.png?itok=V8RGlejx" width="33" height="25" alt="" typeof="foaf:Image" class="image-style-currency" />
+
+
+        </td>
+                                                                      <td class="views-field views-field-field-currency-rate">1000 IRR        </td>
+                                                                      <td class="price views-field views-field-field-currency-percentage">1.10AFN        </td>
+          </tr>
+      <tr>
+      <td class="space" width="20" height="20"></td>
+                                                                      <td class="views-field views-field-field-flag">  <img src="/sites/default/files/styles/currency/public/2016-11/imgres-2_0.png?itok=JPFJQxd4" width="33" height="25" alt="" typeof="foaf:Image" class="image-style-currency" />
+
+
+        </td>
+                                                                      <td class="views-field views-field-field-currency-rate">1 UAE        </td>
+                                                                      <td class="price views-field views-field-field-currency-percentage">19.08AFN        </td>
+          </tr>
+      <tr>
+      <td class="space" width="20" height="20"></td>
+                                                                      <td class="views-field views-field-field-flag">  <img src="/sites/default/files/styles/currency/public/2016-11/flag_yellow_low.jpg?itok=0M8P9oKr" width="33" height="25" alt="" typeof="foaf:Image" class="image-style-currency" />
+
+
+        </td>
+                                                                      <td class="views-field views-field-field-currency-rate">1 EUR        </td>
+                                                                      <td class="price views-field views-field-field-currency-percentage">80.75AFN        </td>
+          </tr>
+      <tr>
+      <td class="space" width="20" height="20"></td>
+                                                                      <td class="views-field views-field-field-flag">  <img src="/sites/default/files/styles/currency/public/2016-11/imgres.png?itok=EonQs3v9" width="33" height="25" alt="" typeof="foaf:Image" class="image-style-currency" />
+
+
+        </td>
+                                                                      <td class="views-field views-field-field-currency-rate">1000 INR        </td>
+                                                                      <td class="price views-field views-field-field-currency-percentage">787.50AFN        </td>
+          </tr>
+      <tr>
+      <td class="space" width="20" height="20"></td>
+                                                                      <td class="views-field views-field-field-flag">  <img src="/sites/default/files/styles/currency/public/2016-11/imgres-1.png?itok=TAjXrS5q" width="33" height="25" alt="" typeof="foaf:Image" class="image-style-currency" />
+
+
+        </td>
+                                                                      <td class="views-field views-field-field-currency-rate">1000 PKR        </td>
+                                                                      <td class="price views-field views-field-field-currency-percentage">247.90AFN        </td>
+          </tr>
+    </tbody>
+</table>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+        </div>
+        <div class="box equal-top-pub pub grey-box twoo-column-tablets last">
+             <div class="block-region-addaftercurrency">        <!-- adsense: adsense disabled. -->
+  </div> 
+        </div>
+      </div>
+      <div class="two-col full-width-col-tablets full-width-col-mobile marginRow">
+        <div class="block-region-sport">        <div><div class="view view-articles view-id-articles view-display-id-sport js-view-dom-id-47f152facd2b856f5914a6a92aa09010607bf1671785260b953ee1e4bdd5fb58">
+  
+    
+      <div class="view-header">
+      
+  <div  class="container-top-post line line-grey">
+  <h2  class="uppercase-txt title-category">
+    Sport 
+  </h2>
+      <a href="https://tolonews.com/sports"  class="view-all-post grey-light5">View all Sport news</a>
+  </div>
+
+    </div>
+      
+      <div class="view-content">
+      <div>
+  
+  <ul class="row full-width-col-mobile list-post">
+
+                <li class="one-col">
+<article class="post-tolonews bar-bottom">
+  <div class="container-image">
+            <a href="/index.php/sport-195006"><img src="/sites/default/files/styles/also_in_the_news_image/public/2025-07/image%20%281%29_3.png?itok=Y99QW2kU" width="310" height="206" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-also-in-the-news-image" />
+
+</a>
+
+      </div>
+  <div class="content-article">
+          <h3 class="title-article"><a href="/index.php/sport-195006" hreflang="en">Cole Palmer Shines as Chelsea Crush PSG 3-0 to Clinch Club World Cup Title</a></h3>
+      <p class="hidden-onmobile">PSG's misery was completed when Joao Neves was sent off for pulling Marc Cucurella’s hair in the 83rd minute.&#13;
+&#13;
+&#13;
+</p>
+        <span
+        class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 8:43 AM","yesterday":"YESTERDAY - 8:43 AM","simple":"14 JULY 2025","timestamp":1752466381}'></span></span>
+  </div>
+</article>
+</li>
+                <li class="one-col last-col">
+<article class="post-tolonews bar-bottom">
+  <div class="container-image">
+            <a href="/sport-194940"><img src="/sites/default/files/styles/also_in_the_news_image/public/2025-07/New%20Project%20-%202025-07-08T200825.954.png?itok=uoPVZ400" width="310" height="206" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-also-in-the-news-image" />
+
+</a>
+
+      </div>
+  <div class="content-article">
+          <h3 class="title-article"><a href="/sport-194940" hreflang="en">ICC Umpire Bismillah Jan Shinwari Passes Away at 41</a></h3>
+      <p class="hidden-onmobile">His funeral was held today (Tuesday) in Achin district of Nangarhar province. He is survived by five sons and seven daughters.&#13;
+&#13;
+&#13;
+</p>
+        <span
+        class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 9:04 PM","yesterday":"YESTERDAY - 9:04 PM","simple":"08 JULY 2025","timestamp":1751992475}'></span></span>
+  </div>
+</article>
+</li>
+                <li class="one-col">
+<article class="post-tolonews small-column">
+  <div class="container-image">
+            <a href="/index.php/sport-194897"><img src="/sites/default/files/styles/more_section_news/public/2025-07/vlcsnap-2025-07-05-11h04m18s651.png?itok=WvIVe1MY" width="147" height="98" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-more-section-news" />
+
+</a>
+
+      </div>
+  <div class="content-article">
+          <h4><a href="/index.php/sport-194897" hreflang="en">Major Sports Facility to Be Built in Khost Province</a></h4>
+        <span
+        class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 1:38 PM","yesterday":"YESTERDAY - 1:38 PM","simple":"05 JULY 2025","timestamp":1751706533}'></span></span>
+  </div>
+</article>
+</li>
+                <li class="one-col last-col">
+<article class="post-tolonews small-column">
+  <div class="container-image">
+            <a href="/index.php/sport-194787"><img src="/sites/default/files/styles/more_section_news/public/2025-06/%D9%81%D8%AA%D8%B3%D8%A7%D9%84.png?itok=USOjW7K8" width="147" height="98" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-more-section-news" />
+
+</a>
+
+      </div>
+  <div class="content-article">
+          <h4><a href="/index.php/sport-194787" hreflang="en">Afghanistan Drawn with Myanmar and Maldives in 2026 Futsal Qualifiers</a></h4>
+        <span
+        class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 4:02 PM","yesterday":"YESTERDAY - 4:02 PM","simple":"26 JUNE 2025","timestamp":1750937566}'></span></span>
+  </div>
+</article>
+</li>
+                <li class="one-col">
+<article class="post-tolonews small-column">
+  <div class="container-image">
+            <a href="/sport-194610"><img src="/sites/default/files/styles/more_section_news/public/2025-06/%D8%AA%DB%8C%D9%85%20%D9%85%D9%84%DB%8C.png?itok=N4qMACRf" width="147" height="98" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-more-section-news" />
+
+</a>
+
+      </div>
+  <div class="content-article">
+          <h4><a href="/sport-194610" hreflang="en">Afghanistan National Football Team to Face Syria Tuesday</a></h4>
+        <span
+        class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 1:21 PM","yesterday":"YESTERDAY - 1:21 PM","simple":"10 JUNE 2025","timestamp":1749545519}'></span></span>
+  </div>
+</article>
+</li>
+                <li class="one-col last-col">
+<article class="post-tolonews small-column">
+  <div class="container-image">
+            <a href="/index.php/sport-194569"><img src="/sites/default/files/styles/more_section_news/public/2025-06/k.png?itok=CAAC3PIk" width="147" height="98" alt="Thumbnail" typeof="foaf:Image" class="image-style-more-section-news" />
+
+</a>
+
+      </div>
+  <div class="content-article">
+          <h4><a href="/index.php/sport-194569" hreflang="en">MLC Officials Hope Afghan Players Can Join Despite US Restrictions</a></h4>
+        <span
+        class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 12:50 PM","yesterday":"YESTERDAY - 12:50 PM","simple":"06 JUNE 2025","timestamp":1749198036}'></span></span>
+  </div>
+</article>
+</li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+        <nav class="pager--load-more" role="navigation" aria-labelledby="pagination-heading">
+          <ul class="pager__items js-pager__items load-more-post centered uppercase-txt visible-onlymobile">
+        <li class="pager__item">
+          <a href="/front?page=0%2C0%2C0%2C1%2C0" class="red bold">Load more</a>
+        </li>
+      </ul>
+      </nav>
+
+          </div>
+</div>
+
+  </div>
+      </div>
+      <div class="four-col twoo-col-ontablets last-col">
+        <div class="block-region-world">        <div><div class="view view-articles view-id-articles view-display-id-world js-view-dom-id-6a425448e217c9e002da85b080a480b2ab0238f29b6c8d1a090dc16b590a64e8">
+  
+    
+      <div class="view-header">
+      
+  <div  class="container-top-post line line-grey">
+  <h2  class="uppercase-txt title-category">
+    World 
+  </h2>
+      <a href="https://tolonews.com/world"  class="view-all-post grey-light5">View all World news</a>
+  </div>
+
+    </div>
+      
+      <div class="view-content">
+      <div>
+  
+  <ul class="row full-width-col-mobile list-post equal-height">
+
+                              <li class="one-col">  <article class="post-tolonews bar-bottom medium-column">
+        <div class="container-image">
+        <a href="/world-195168"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-07/New%20Project%20%282%29_1.png?itok=vN0clc8A" width="225" height="150" alt="Thumbnail" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/world-195168" hreflang="en">Israel, U.S. Quit Talks; Hamas Calls It Pressure Tactic</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">Experts warn Gaza is being pushed closer to famine, after months of Israel entirely blocking food or letting in only limited amounts.</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 11:39 AM","yesterday":"YESTERDAY - 11:39 AM","simple":"26 JULY 2025","timestamp":1753513795}'></span></span>
+    </div>
+  </article>
+</li>
+                              <li class="two-col">  <article class="post-tolonews bar-bottom medium-column">
+        <div class="container-image">
+        <a href="/index.php/world-195158"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-07/New%20Project%20-%202025-07-25T191435.287.png?itok=DtJB3xT8" width="225" height="150" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/index.php/world-195158" hreflang="en">WHO Warns of Severe Child Malnutrition Amid Gaza Aid Crisis</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">The WHO has stated that a large portion of Gaza’s two million population is facing hunger, and the food shortage has reached catastrophic…</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 8:55 PM","yesterday":"YESTERDAY - 8:55 PM","simple":"25 JULY 2025","timestamp":1753460729}'></span></span>
+    </div>
+  </article>
+</li>
+                              <li class="three-col">  <article class="post-tolonews bar-bottom medium-column">
+        <div class="container-image">
+        <a href="/world-195144"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-07/image_16.png?itok=DYL_kEVj" width="225" height="150" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/world-195144" hreflang="en">Silent Death in Gaza: Hunger Replaces Gunfire</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">                             The Gaza Ministry of Health has announced that in just the past 24 hours, at least 10 people have died from…</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 1:03 PM","yesterday":"YESTERDAY - 1:03 PM","simple":"24 JULY 2025","timestamp":1753346025}'></span></span>
+    </div>
+  </article>
+</li>
+                              <li class="four-col last-col"><article class="post-tolonews bar-bottom medium-column last">
+      <div class="container-image">
+        <a href="/index.php/world-195131"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-07/New%20Project%20%2817%29_0.png?itok=kOCyTuFs" width="225" height="150" alt="Thumbnail" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/index.php/world-195131" hreflang="en">Gaza Has Been at Risk of Famine for Months, Experts Say</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">Hundreds have been killed by Israeli forces as they try to reach aid sites or convoys, according to health officials and the United…</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 4:15 PM","yesterday":"YESTERDAY - 4:15 PM","simple":"23 JULY 2025","timestamp":1753271139}'></span></span>
+    </div>
+  </article>
+</li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+        <nav class="pager--load-more" role="navigation" aria-labelledby="pagination-heading">
+          <ul class="pager__items js-pager__items load-more-post centered uppercase-txt visible-onlymobile">
+        <li class="pager__item">
+          <a href="/front?page=0%2C0%2C0%2C0%2C1" class="red bold">Load more</a>
+        </li>
+      </ul>
+      </nav>
+
+          </div>
+</div>
+
+  </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="inner-container">
+        <div class="block-region-opinionsandtwitter">        <div><div class="two-col full-width-col-tablets full-width-col-mobile view view-articles view-id-articles view-display-id-opinions js-view-dom-id-7dbec2a58ed8ad72d6c7ea01159767fd1949741e7bd3368b8f94304d3fe7cfde">
+  
+    
+      <div class="view-header">
+      
+  <div  class="container-top-post line line-grey">
+  <h2  class="uppercase-txt title-category">
+    Opinion 
+  </h2>
+      <a href="https://tolonews.com/opinion"  class="view-all-post grey-light5">View all Opinions</a>
+  </div>
+
+    </div>
+      
+      <div class="view-content">
+       <div>
+  
+  <ul class="list-post">
+
+                <li class="post-tolonews bar-bottom vertical-bloc"><div class="container-image">
+    <a href="/opinion-194662"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-06/image%20%282%29_0.png?itok=XaZXM9iK" width="225" height="150" alt="Thumbnail" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+</div>
+<div class="content-article">
+  <h3 class="title-article"><a href="/opinion-194662" hreflang="en">OpEd: UNICEF, UK Launch Drive to Tackle Malnutrition in Afghanistan</a></h3>
+  <p class="hidden-onmobile">                            Half of children live in severe food poverty – eating only two food groups per day. </p>
+  <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 6:06 PM","yesterday":"YESTERDAY - 6:06 PM","simple":"15 JUNE 2025","timestamp":1749994614}'></span></span>
+</div></li>
+                <li class="post-tolonews bar-bottom vertical-bloc"><div class="container-image">
+    <a href="/index.ph%70/opinion-193572"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-03/CHINA.png?itok=cAGSMFN_" width="225" height="150" alt="Thumbnail" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+</div>
+<div class="content-article">
+  <h3 class="title-article"><a href="/index.ph%70/opinion-193572" hreflang="en">Op-Ed: China Provides Certainty to The Uncertain World</a></h3>
+  <p class="hidden-onmobile">Afghanistan and China share a friendship that spans over a thousand years, and are important neighbors to both countries.</p>
+  <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 10:33 AM","yesterday":"YESTERDAY - 10:33 AM","simple":"23 MARCH 2025","timestamp":1742709812}'></span></span>
+</div></li>
+                              <li class="post-tolonews bar-bottom vertical-bloc last"><div class="container-image">
+    <a href="/afghanistan-193429"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-03/image%20%281%29_3.png?itok=D0F7RjM2" width="225" height="150" alt="Thumbnail" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+</div>
+<div class="content-article">
+  <h3 class="title-article"><a href="/afghanistan-193429" hreflang="en">Afghanistan-Uzbekistan Relations: A New Era of Economic Cooperation</a></h3>
+  <p class="hidden-onmobile">Currently, Kabul and Tashkent enjoy stronger economic relations than ever before, alongside their political ties.</p>
+  <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 2:15 PM","yesterday":"YESTERDAY - 2:15 PM","simple":"13 MARCH 2025","timestamp":1741859133}'></span></span>
+</div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+        <nav class="pager--load-more" role="navigation" aria-labelledby="pagination-heading">
+          <ul class="pager__items js-pager__items load-more-post centered uppercase-txt visible-onlymobile">
+        <li class="pager__item">
+          <a href="/front?page=0%2C0%2C1%2C0%2C0" class="red bold">Load more</a>
+        </li>
+      </ul>
+      </nav>
+
+          </div>
+</div>
+
+          
+<div class="one-col last-col noTopMargin-col">
+  <div class="box box-tolo-twitter hidden-onmobile  hidden-ontablets">
+          <div class="container-top-post no-margin line line-blue clearfix">
+        <h3 class="titleBlock blue1 uppercase-txt">
+            Twitter feed
+      </h3>
+      <a class="grey-light5 grey-light4 view-all-post" href="https://www.twitter.com/TOLOnews" target="_blank" title="Tolonews">
+        @Tolonews
+      </a>
+    </div>
+    <div class="twitter-feed">
+              <a class="twitter-timeline" data-border-color="#e9e9e9" data-chrome="nofooter noscrollbar  transparent noheader " data-link-color="#43adef" data-show-replies="false" data-src="false" data-theme="light" data-tweet-limit="4" href="https://www.twitter.com/TOLOnews">
+              Tweets de @TOLOnews
+      </a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <div class="centered follow-tolo">
+                  <a class="blue1" data-show-count="false" href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2F127.0.0.1%2Ftolonewsfinal%2Fpage-section.php&amp;ref_src=twsrc%5Etfw&amp;region=follow_link&amp;screen_name=TOLOnews&amp;tw_p=followbutton" target="back">
+                  <i class="fa fa-twitter"></i>
+          <span>Follow @TOLOnews</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+    </div>
+  </div>
+  <div class="row grey-dark marginRow hidden-onmobile">
+    <div class="inner-container row-social-tolo">
+      <div class="block-region-social">        
+<h2 class="uppercase-txt line line-grey2 ">
+  Follow us on social networks
+</h2>
+<ul class="social-media">
+  <li>
+    <a href="https://www.facebook.com/TOLOnews" target="_blank" title="Facebook">
+      <i class="fa fa-facebook"></i>
+      Facebook
+    </a>
+  </li>
+  <li>
+    <a href="https://www.twitter.com/TOLOnews" target="_blank" title="Twitter">
+      <i class="fa fa-twitter"></i>
+      Twitter
+    </a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/user/TOLOnewsLive" target="_blank" title="Youtube">
+      <i class="fa fa-youtube-play"></i>
+      Youtube
+    </a>
+  </li>
+  <li class="last">
+    <a href="https://www.instagram.com/tolonewsOfficial" target="_blank" title="Instagram">
+      <i class="fa fa-instagram"></i>
+      Instagram
+    </a>
+  </li>
+</ul>
+
+  </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="inner-container">
+      <div class="four-col twoo-col-ontablets last-col">
+        <div class="block-region-artsculture">        <div><div class="view view-articles view-id-articles view-display-id-arts js-view-dom-id-b54d8833f1960043ef6750ea20bfc4a84ea98f03acd49020ac228326f2873381">
+  
+    
+      <div class="view-header">
+      
+  <div  class="container-top-post line line-grey">
+  <h2  class="uppercase-txt title-category">
+    Arts &amp; Culture
+  </h2>
+      <a href="https://tolonews.com/arts-culture"  class="view-all-post grey-light5">View all Arts &amp; Culture news</a>
+  </div>
+
+    </div>
+      
+      <div class="view-content">
+      <div>
+  
+  <ul class="row full-width-col-mobile list-post equal-height">
+
+                              <li class="one-col">  <article class="post-tolonews bar-bottom medium-column">
+        <div class="container-image">
+        <a href="/arts-culture-195024"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-07/ty.png?itok=G4nNoglK" width="225" height="150" alt="Thumbnail" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/arts-culture-195024" hreflang="en">Matiullah Turab Laid to Rest in Nangarhar</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">                            He was widely known among the people for his revolutionary and popular poetry.&#13;
+&#13;
+</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 9:46 PM","yesterday":"YESTERDAY - 9:46 PM","simple":"15 JULY 2025","timestamp":1752599760}'></span></span>
+    </div>
+  </article>
+
+</li>
+                              <li class="two-col">  <article class="post-tolonews bar-bottom medium-column">
+        <div class="container-image">
+        <a href="/index.php/arts-culture-195021"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-07/8f7924e5-a62c-48d8-adcd-b2891d2c0dbe.png?itok=oGIiAFBU" width="225" height="150" alt="Thumbnail" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/index.php/arts-culture-195021" hreflang="en">Voice of Revolutionary Poetry Goes Silent: Afghanistan Mourns Turab</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">Former President Hamid Karzai wrote on X that Matiullah Turab conveyed the pain and struggles of the country and people through heartfelt…</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 3:49 PM","yesterday":"YESTERDAY - 3:49 PM","simple":"15 JULY 2025","timestamp":1752578341}'></span></span>
+    </div>
+  </article>
+
+</li>
+                              <li class="three-col">  <article class="post-tolonews bar-bottom medium-column">
+        <div class="container-image">
+        <a href="/arts-culture-194617"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-06/vlcsnap-2025-06-11-09h23m15s240.png?itok=22fWG9r2" width="225" height="150" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/arts-culture-194617" hreflang="en">Herat Girls Revive Ancient Miniature and Illumination Arts</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">                  Local officials in Herat pledge that they support artists to help the growth of the country’s traditional arts.&#13;
+</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 11:37 AM","yesterday":"YESTERDAY - 11:37 AM","simple":"11 JUNE 2025","timestamp":1749625679}'></span></span>
+    </div>
+  </article>
+
+</li>
+                              <li class="four-col last-col"><article class="post-tolonews bar-bottom medium-column last">
+      <div class="container-image">
+        <a href="/index.php/arts-culture-194600"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-06/vlcsnap-2025-06-09-10h45m22s000.png?itok=hWne9bwq" width="225" height="150" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/index.php/arts-culture-194600" hreflang="en">Art Exhibit in Kandahar Attracts Foreign Visitors</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">The Directorate of Information and Culture of Kandahar said that the exhibition has attracted a large number of domestic and foreign…</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 12:52 PM","yesterday":"YESTERDAY - 12:52 PM","simple":"09 JUNE 2025","timestamp":1749457374}'></span></span>
+    </div>
+  </article>
+
+</li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+        <nav class="pager--load-more" role="navigation" aria-labelledby="pagination-heading">
+          <ul class="pager__items js-pager__items load-more-post centered uppercase-txt visible-onlymobile">
+        <li class="pager__item">
+          <a href="/front?page=0%2C0%2C0%2C0%2C1" class="red bold">Load more</a>
+        </li>
+      </ul>
+      </nav>
+
+          </div>
+</div>
+
+  </div>
+      </div>
+    </div>
+  </div>
+  <div class="row marginRow">
+    <div class="inner-container">
+      <div class="four-col twoo-col-ontablets last-col">
+        <div class="block-region-science">        <div><div class="view view-articles view-id-articles view-display-id-scince js-view-dom-id-c291a92dd32b32ad20252c8f36d3610113bc93fe066fc5d4017157ab886e7ff8">
+  
+    
+      <div class="view-header">
+      
+  <div  class="container-top-post line line-grey">
+  <h2  class="uppercase-txt title-category">
+    Science &amp; Technology
+  </h2>
+      <a href="https://tolonews.com/science-and-technology"  class="view-all-post grey-light5">View all Science &amp; Technology news</a>
+  </div>
+
+    </div>
+      
+      <div class="view-content">
+      <div>
+  
+  <ul class="row full-width-col-mobile list-post equal-height">
+
+                              <li class="one-col">  <article class="post-tolonews bar-bottom medium-column">
+        <div class="container-image">
+        <a href="/index.php/science-technology-193193"><img src="/sites/default/files/styles/opinion_section_articles/public/2025-02/image_18.png?itok=bnjh99Vn" width="225" height="150" alt="Thumbnail" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/index.php/science-technology-193193" hreflang="en">Climate Change Is Shrinking Glaciers Faster Than Ever</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">And the last few years, the melt has accelerated even more, hitting a record 604 billion tons (548 billion metric tons) lost in 2023, the…</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 11:33 AM","yesterday":"YESTERDAY - 11:33 AM","simple":"24 FEBRUARY 2025","timestamp":1740380582}'></span></span>
+    </div>
+  </article>
+
+</li>
+                              <li class="two-col">  <article class="post-tolonews bar-bottom medium-column">
+        <div class="container-image">
+        <a href="/index.php/science-technology-191980"><img src="/sites/default/files/styles/opinion_section_articles/public/2024-12/anima.jpg?itok=9dvCgbeH" width="225" height="150" alt="Thumbnail" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/index.php/science-technology-191980" hreflang="en">Over 41,000 Species at Risk on World Wildlife Day</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">The World Wildlife Fund (WWF) has also expressed concern about the decline in global wildlife populations.&#13;
+&#13;
+</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 3:03 PM","yesterday":"YESTERDAY - 3:03 PM","simple":"04 DECEMBER 2024","timestamp":1733308424}'></span></span>
+    </div>
+  </article>
+
+</li>
+                              <li class="three-col">  <article class="post-tolonews bar-bottom medium-column">
+        <div class="container-image">
+        <a href="/index.php/science-technology-191413"><img src="/sites/default/files/styles/opinion_section_articles/public/2024-10/vlcsnap-2024-10-29-08h17m41s952.png?itok=OJg-X3Wg" width="225" height="150" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/index.php/science-technology-191413" hreflang="en">Jawzjan Student Builds Smartphone-Controlled Farming Machine</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">Local officials in Jawzjan expressed their support for innovative and creative youth in all fields.&#13;
+&#13;
+&#13;
+</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 2:02 PM","yesterday":"YESTERDAY - 2:02 PM","simple":"29 OCTOBER 2024","timestamp":1730194334}'></span></span>
+    </div>
+  </article>
+
+</li>
+                              <li class="four-col last-col"><article class="post-tolonews bar-bottom medium-column last">
+      <div class="container-image">
+        <a href="/science-technology-188207"><img src="/sites/default/files/styles/opinion_section_articles/public/2024-04/vlcsnap-2024-04-08-10h30m45s115.png?itok=9GxENlPc" width="225" height="150" alt="تصویر بندانگشتی" typeof="foaf:Image" class="image-style-opinion-section-articles" />
+
+</a>
+
+    </div>
+    <div class="content-article">
+      <h3 class="title-article"><a href="/science-technology-188207" hreflang="en">Young Innovator in Kunduz Creates Software for Money Exchangers</a></h3>
+      <p class="hidden-ontablets hidden-onmobile">                        Now 400 money exchangers inside the country and 600 more abroad are using this software.&#13;
+</p>
+      <span class="post-date grey-light3"><span class='article-formatter' data-time='{"today":"TODAY - 1:05 PM","yesterday":"YESTERDAY - 1:05 PM","simple":"08 APRIL 2024","timestamp":1712565327}'></span></span>
+    </div>
+  </article>
+
+</li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+        <nav class="pager--load-more" role="navigation" aria-labelledby="pagination-heading">
+          <ul class="pager__items js-pager__items load-more-post centered uppercase-txt visible-onlymobile">
+        <li class="pager__item">
+          <a href="/front?page=0%2C0%2C0%2C0%2C1" class="red bold">Load more</a>
+        </li>
+      </ul>
+      </nav>
+
+          </div>
+</div>
+
+  </div>
+      </div>
+    </div>
+  </div>
+  <div class="row marginRow">
+    <div class="inner-container">
+      <div class="one-col full-width-col-tablets">
+        <div class="twoo-column-tablets hidden-onmobile">
+          <div class="block-region-poll">        <span class="poll-place hide"><a href="/ajax/poll" class="use-ajax"></a></span>
+          <!-- adsense: adsense disabled. -->
+  </div>
+			
+        </div>
+                  <div class="box-tolonews-program bar-bottomss hidden-onmobile twoo-column-tablets last">
+            <div class="block-region-schedule">        <div><div class="view view-schedule view-id-schedule view-display-id-schedule_block js-view-dom-id-77e04b81edb7291706fcad7112a7d505674668c06460255a8ad9cbcba813762e">
+  
+    
+      
+  
+          </div>
+</div>
+
+  </div>
+          </div>
+              </div>
+      <div class="two-col full-width-col-tablets last-col hidden-onmobile box-photo-right">
+        <div class="block-region-photosoftheday">        <div><div class="view-juicebox view view-juice-box-gallery view-id-juice_box_gallery view-display-id-block_1 js-view-dom-id-b7793b9e6e3379bc1b7e5a24a8bb1f90a3806aab6ed16dc4286934fd44ab438b">
+  
+    
+      <div class="view-header">
+      <div class="container-top-post line line-grey clearfix"><h2 class="uppercase-txt title-category">Photos of the day</h2></div>
+    </div>
+      
+      <div class="view-content">
+      <div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=274380882576612";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		
+		
+<div class="juicebox-parent">
+  
+  <div id="juice-box-gallery--block-1" class="juicebox-container">
+    <noscript>
+      <!-- Image gallery content for non-javascript devices -->
+                        <p class="jb-image">
+        <img src="/sites/default/files/styles/photo_of_the_day_main/public/2021-08/77.jpg?itok=dVVKWAWN" alt="" title="Kunar Province" typeof="foaf:Image" />
+<br/>
+        <span class="jb-title">Kunar Province</span><br/>
+        <span class="jb-caption"></span>
+      </p>
+            <p class="jb-image">
+        <img src="/sites/default/files/styles/photo_of_the_day_main/public/2021-08/Kabul.jpg?itok=CSOZKKEC" alt="" title="Kabul city" typeof="foaf:Image" />
+<br/>
+        <span class="jb-title">Kabul city</span><br/>
+        <span class="jb-caption"></span>
+      </p>
+            <p class="jb-image">
+        <img src="/sites/default/files/styles/photo_of_the_day_main/public/2021-07/Parwan.jpg?itok=0Brx1aZq" alt="" title="Parwan province in the north" typeof="foaf:Image" />
+<br/>
+        <span class="jb-title">Parwan province in the north</span><br/>
+        <span class="jb-caption"></span>
+      </p>
+            <p class="jb-image">
+        <img src="/sites/default/files/styles/photo_of_the_day_main/public/2021-07/Kabul%2011.jpg?itok=su1d55Pz" alt="" title="Sarobi district, Kabul" typeof="foaf:Image" />
+<br/>
+        <span class="jb-title">Sarobi district, Kabul</span><br/>
+        <span class="jb-caption"></span>
+      </p>
+            <p class="jb-image">
+        <img src="/sites/default/files/styles/photo_of_the_day_main/public/2021-07/Eid.jpg?itok=amXZt5Ik" alt="" title="Dried fruit market in Kabul ahead of Eid-ul-Adha." typeof="foaf:Image" />
+<br/>
+        <span class="jb-title">Dried fruit market in Kabul ahead of Eid-ul-Adha.</span><br/>
+        <span class="jb-caption"></span>
+      </p>
+            <p class="jb-image">
+        <img src="/sites/default/files/styles/photo_of_the_day_main/public/2021-07/Panjshir.jpg?itok=zus1krm-" alt="" title="A young man cleans berries in Panjshir province during the annual berry festival." typeof="foaf:Image" />
+<br/>
+        <span class="jb-title">A young man cleans berries in Panjshir province during the annual berry festival.</span><br/>
+        <span class="jb-caption"></span>
+      </p>
+            <p class="jb-image">
+        <img src="/sites/default/files/styles/photo_of_the_day_main/public/2021-07/Sarobi.jpg?itok=KE-F93H8" alt="" title="Sarobi district, Kabul" typeof="foaf:Image" />
+<br/>
+        <span class="jb-title">Sarobi district, Kabul</span><br/>
+        <span class="jb-caption"></span>
+      </p>
+            <p class="jb-image">
+        <img src="/sites/default/files/styles/photo_of_the_day_main/public/2021-07/Kabul.jpg?itok=tHtc_8Vw" alt="" title="Cityscapes of Kabul, capital of Afghanistan." typeof="foaf:Image" />
+<br/>
+        <span class="jb-title">Cityscapes of Kabul, capital of Afghanistan.</span><br/>
+        <span class="jb-caption"></span>
+      </p>
+            <p class="jb-image">
+        <img src="/sites/default/files/styles/photo_of_the_day_main/public/2021-06/11111.jpg?itok=VVBfyDdT" alt="" title="Even as fighting grips the nation, a number of artists have recently opened galleries in Kabul." typeof="foaf:Image" />
+<br/>
+        <span class="jb-title">Even as fighting grips the nation, a number of artists have recently opened galleries in Kabul.</span><br/>
+        <span class="jb-caption"></span>
+      </p>
+            <p class="jb-image">
+        <img src="/sites/default/files/styles/photo_of_the_day_main/public/2021-06/Balkh%2011.jpg?itok=O5z0_Ovt" alt="" title="Peach harvest in the northern province of Balkh." typeof="foaf:Image" />
+<br/>
+        <span class="jb-title">Peach harvest in the northern province of Balkh.</span><br/>
+        <span class="jb-caption"></span>
+      </p>
+          </noscript>
+  </div>
+</div>
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+    </div>
+    
+    
+    <footer class="row grey-dark">
+        <section class="inner-container footer-section">
+            <div class="middle">
+                <div class="media full-width-col-mobile one-col last-col">
+                                                      <a href="#" title=""><img src="/themes/custom/tolonews/images/logo-footer.png" alt="logo" width="170" height="auto"></a>
+<ul class="social-media">
+  <li>
+    <a href="https://www.facebook.com/TOLOnews" target="_blank" title="Facebook"><i class="fa meduim-play fa-facebook"></i></a>
+  </li>
+  <li>
+    <a href="https://www.twitter.com/TOLOnews" target="_blank" title="Twitter"><i class="fa meduim-play fa-twitter"></i> </a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/user/TOLOnewsLive" target="_blank" title="Youtube"><i class="fa meduim-play fa-youtube-play"></i></a>
+  </li>
+  <li>
+    <a href="https://www.instagram.com/tolonewsOfficial" target="_blank" title="Instagram"><i class="fa small-picto fa-instagram"></i></a>
+  </li>
+</ul>
+
+  
+
+                                    </div>
+                <div class="footer-nav hidden-onmobile">
+                                              
+<div class="inline-columnFooter">
+    <h4>TOLOnews</h4>
+                                <ul>
+
+                            <li>
+                <a href="/" title="" id="" name="" rel="" style="" target="" accesskey="" data-drupal-link-system-path="&lt;front&gt;" class="is-active">Home</a>
+                            </li>
+                    <li>
+                <a href="/afghanistan" data-drupal-link-system-path="taxonomy/term/31">Afghanistan</a>
+                            </li>
+                    <li>
+                <a href="/world" data-drupal-link-system-path="taxonomy/term/1">World</a>
+                            </li>
+                    <li>
+                <a href="/business" data-drupal-link-system-path="taxonomy/term/26">Business</a>
+                            </li>
+                    <li>
+                <a href="/video" data-drupal-link-system-path="video">Video</a>
+                            </li>
+                    <li>
+                <a href="/sports" data-drupal-link-system-path="taxonomy/term/6">Sport</a>
+                            </li>
+                    <li>
+                <a href="/arts-culture" data-drupal-link-system-path="taxonomy/term/21">Arts &amp; Culture</a>
+                            </li>
+                    <li>
+                <a href="http://elections.tolonews.com/">Election</a>
+                            </li>
+                    <li>
+                <a href="/opinion" data-drupal-link-system-path="taxonomy/term/51">Opinion</a>
+                            </li>
+                    <li>
+                <a href="/elections-2019" title="Election 2019
+" data-drupal-link-system-path="taxonomy/term/24796">Elections 2019</a>
+                            </li>
+                    <li>
+                <a href="/health" data-drupal-link-system-path="taxonomy/term/34603">Health</a>
+                            </li>
+                    <li>
+                <a href="/science-and-technology" data-drupal-link-system-path="taxonomy/term/19271">Science &amp; Technology</a>
+                            </li>
+                </ul>
+    
+
+    </div>
+
+
+<div class="inline-columnFooter last">
+    <h4>Elections</h4>
+                                <ul>
+
+                            <li>
+                <a href="http://elections.tolonews.com">Home</a>
+                            </li>
+                    <li>
+                <a href="http://elections.tolonews.com/news">News</a>
+                            </li>
+                    <li>
+                <a href="http://elections.tolonews.com/candidates">Candidates</a>
+                            </li>
+                    <li>
+                <a href="http://elections.tolonews.com/debates-analysis">Debates &amp; Analysis</a>
+                            </li>
+                    <li>
+                <a href="http://elections.tolonews.com/provinces">Provincial</a>
+                            </li>
+                    <li>
+                <a href="http://elections.tolonews.com/video-galleries">Videos</a>
+                            </li>
+                    <li>
+                <a href="http://elections.tolonews.com/frequently-asked-questions-and-answers">FAQ</a>
+                            </li>
+                </ul>
+    
+
+    </div>
+
+
+
+                                    </div>
+                <div class="col-newsletter full-width-col-mobile">
+                                            <h4>Newsletter</h4>
+                        <p>Sign up to receive the best of Tolo News daily</p>
+                                  <form action="/" method="post" id="mailchimp-signup-subscribe-block-newsletter-form--2" accept-charset="UTF-8">
+  <div id="mailchimp-newsletter-6fb282eb76-mergefields" class="mailchimp-newsletter-mergefields"><div class="js-form-item form-item js-form-type-email form-type-email js-form-item-mergevars-email form-item-mergevars-email form-no-label">
+      <label for="edit-mergevars-email--2" class="visually-hidden js-form-required form-required">Email Address</label>
+        <input placeholder="Your email address" data-drupal-selector="edit-mergevars-email" type="email" id="edit-mergevars-email--2" name="mergevars[EMAIL]" value="" size="25" maxlength="254" class="form-email required" required="required" aria-required="true" />
+
+        </div>
+</div><input data-drupal-selector="form-audapa8tjouolcyypswfqael2j77chml3kdqchohqw" type="hidden" name="form_build_id" value="form-_AuDapA8tjOuoLCyyPsWFqAeL2j77ChMl3KdQcHohQw" />
+<input data-drupal-selector="edit-mailchimp-signup-subscribe-block-newsletter-form-2" type="hidden" name="form_id" value="mailchimp_signup_subscribe_block_newsletter_form" />
+<input data-drupal-selector="edit-submit" type="submit" id="edit-submit--2" name="op" value="ok" class="button js-form-submit form-submit" />
+
+</form>
+
+  
+
+                                                                          <ul class="post-numbers hidden-onmobile">
+  <li>
+    <span class="numbers">23985</span><span>articles</span>
+  </li>
+  <li>
+    <span class="numbers">2</span><span>comments</span>
+  </li>
+  <li>
+    <span class="numbers">2735366</span><span>followers</span>
+  </li>
+</ul>
+
+  
+
+                                    </div>
+            </div>
+
+            <ul class="nav-copyright clearfix">
+                <li class="one-col full-width-col-mobile">
+                    ©2025 TOLOnews - All Rights Reserved</li>
+                <li class="one-col full-width-col-mobile footer-menu-custom">
+                                              
+                <ul class="nav">
+
+                <li><a href="/about-us" data-drupal-link-system-path="node/36">About Us</a></li>
+            <li><a href="/privacy-policy" data-drupal-link-system-path="node/69116">Privacy Policy</a></li>
+            <li><a href="/node/41" data-drupal-link-system-path="node/41">Terms of Use</a></li>
+            <li><a href="/node/46" data-drupal-link-system-path="node/46">Advertise</a></li>
+        </ul>
+
+
+
+
+
+                                    </li>
+            </ul>
+        </section>
+    </footer>
+    <div class="row visible-onlymobile">
+        <div class="inner-container">
+            <div class="block-region-mobilefooter">
+                <div class="text-align-center">
+                    <div class="adsense" style="width:320px;height:50px; margin: 0 auto;">
+                        <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+                        <!-- 320x50 -->
+                        <!-- <ins class="adsbygoogle"
+                             style="display:inline-block;width:320px;height:50px"
+                             data-ad-client="ca-pub-2568784578652137"
+                             data-ad-slot="9432558203"></ins> -->
+                        <script>
+                            // (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"front","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ajaxPageState":{"libraries":"classy\/base,classy\/messages,core\/html5shiv,core\/normalize,google_analytics\/google_analytics,juicebox\/juicebox,juicebox\/juicebox.local,poll\/drupal.poll-links,system\/base,tolonews\/global-styling,tolonews_ajax_views\/tolonews_ajax_views,tolonews_poll\/ajax_poll,views\/views.ajax,views\/views.module,views_load_more\/views_load_more","theme":"tolonews","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":true},"juicebox":{"node--172880--field-photo-image---custom":{"configUrl":"\/index.php\/juicebox\/xml\/field\/node\/172880\/field_photo_image\/_custom?checksum=5d5432d80da7e82009747e4bb40983a8\u0026xml-source-path=front\u0026xml-source-id=xml--node--172880--field-photo-image---custom\u0026option=com_content\u0026view=article\u0026id=2942%3Ataliban-enemy-of-afghanistan-isaf\u0026catid=1%3Aafghanistan-cat\u0026Itemid=95\u0026lang=en\u0026page=2%2C1%2C4%2C1%2C6","containerId":"node--172880--field-photo-image---custom","gallerywidth":"100%","galleryheight":"600px","backgroundcolor":"#ffffff"},"node--173171--field-photo-image---custom":{"configUrl":"\/juicebox\/xml\/field\/node\/173171\/field_photo_image\/_custom?checksum=30cb081843e877988f10025171460920\u0026xml-source-path=front\u0026xml-source-id=xml--node--173171--field-photo-image---custom\u0026lang=pa\u0026device=desktop\u0026page=18%2C1%2C14%2C15%2C29","containerId":"node--173171--field-photo-image---custom","gallerywidth":"100%","galleryheight":"600px","backgroundcolor":"#ffffff"},"node--173222--field-photo-image---custom":{"configUrl":"\/juicebox\/xml\/field\/node\/173222\/field_photo_image\/_custom?checksum=f8e3e4d3cb3331b5cba7d75835f22f7f\u0026xml-source-path=front\u0026xml-source-id=xml--node--173222--field-photo-image---custom\u0026view=section\u0026layout=blog\u0026id=2\u0026Itemid=46\u0026option=\u0026start=819\u0026page=22%2C2%2C42%2C23%2C25","containerId":"node--173222--field-photo-image---custom","gallerywidth":"100%","galleryheight":"600px","backgroundcolor":"#ffffff"},"node--173434--field-photo-image---custom":{"configUrl":"\/juicebox\/xml\/field\/node\/173434\/field_photo_image\/_custom?checksum=7e6b4037b7a186e1d28f08c13d364e7e\u0026xml-source-path=front\u0026xml-source-id=xml--node--173434--field-photo-image---custom\u0026page=1%2C2%2C21%2C14%2C23","containerId":"node--173434--field-photo-image---custom","gallerywidth":"100%","galleryheight":"600px","backgroundcolor":"#ffffff"},"node--173505--field-photo-image---custom":{"configUrl":"\/juicebox\/xml\/field\/node\/173505\/field_photo_image\/_custom?checksum=60148b40961af233f051ef0dbc93be01\u0026xml-source-path=front\u0026xml-source-id=xml--node--173505--field-photo-image---custom\u0026lang=fa\u0026page=33%2C1%2C32%2C35%2C12","containerId":"node--173505--field-photo-image---custom","gallerywidth":"100%","galleryheight":"600px","backgroundcolor":"#ffffff"},"node--173617--field-photo-image---custom":{"configUrl":"\/juicebox\/xml\/field\/node\/173617\/field_photo_image\/_custom?checksum=ab8f88c97b18104a56c9e4e7da88d0d7\u0026xml-source-path=front\u0026xml-source-id=xml--node--173617--field-photo-image---custom\u0026page=37%2C1%2C27%2C7%2C7","containerId":"node--173617--field-photo-image---custom","gallerywidth":"100%","galleryheight":"600px","backgroundcolor":"#ffffff"},"node--173722--field-photo-image---custom":{"configUrl":"\/juicebox\/xml\/field\/node\/173722\/field_photo_image\/_custom?checksum=f3df64676051fac15a862790ec382189\u0026xml-source-path=front\u0026xml-source-id=xml--node--173722--field-photo-image---custom\u0026page=19%2C2%2C36%2C12%2C49","containerId":"node--173722--field-photo-image---custom","gallerywidth":"100%","galleryheight":"600px","backgroundcolor":"#ffffff"},"node--173804--field-photo-image---custom":{"configUrl":"\/juicebox\/xml\/field\/node\/173804\/field_photo_image\/_custom?checksum=41165d75507639f51f8f9764a833f13c\u0026xml-source-path=front\u0026xml-source-id=xml--node--173804--field-photo-image---custom\u0026lang=pa\u0026device=desktop\u0026page=24%2C2%2C24%2C12%2C13","containerId":"node--173804--field-photo-image---custom","gallerywidth":"100%","galleryheight":"600px","backgroundcolor":"#ffffff"},"node--173979--field-photo-image---custom":{"configUrl":"\/juicebox\/xml\/field\/node\/173979\/field_photo_image\/_custom?checksum=d9386c72d06a15e4c73778c1fc10d13b\u0026xml-source-path=front\u0026xml-source-id=xml--node--173979--field-photo-image---custom\u0026page=32%2C4%2C40%2C28%2C26","containerId":"node--173979--field-photo-image---custom","gallerywidth":"100%","galleryheight":"600px","backgroundcolor":"#ffffff"},"node--174306--field-photo-image---custom":{"configUrl":"\/juicebox\/xml\/field\/node\/174306\/field_photo_image\/_custom?checksum=756e3a2100572ed3842014a89bc43f4f\u0026xml-source-path=front\u0026xml-source-id=xml--node--174306--field-photo-image---custom\u0026Itemid=100\u0026id=4\u0026lang=en\u0026option=com_news_portal\u0026view=category\u0026page=15%2C1%2C24%2C25%2C24","containerId":"node--174306--field-photo-image---custom","gallerywidth":"100%","galleryheight":"600px","backgroundcolor":"#ffffff"},"juice-box-gallery--block-1":{"configUrl":"\/juicebox\/xml\/viewsstyle\/juice_box_gallery\/block_1?checksum=7f39897da444a7c581736fc614dc564a","containerId":"juice-box-gallery--block-1","gallerywidth":"100%","galleryheight":"620px","backgroundcolor":"#ffffff"}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:c291a92dd32b32ad20252c8f36d3610113bc93fe066fc5d4017157ab886e7ff8":{"view_name":"articles","view_display_id":"scince","view_args":"19271","view_path":"\/front","view_base_path":null,"view_dom_id":"c291a92dd32b32ad20252c8f36d3610113bc93fe066fc5d4017157ab886e7ff8","pager_element":"4"},"views_dom_id:b54d8833f1960043ef6750ea20bfc4a84ea98f03acd49020ac228326f2873381":{"view_name":"articles","view_display_id":"arts","view_args":"21","view_path":"\/front","view_base_path":null,"view_dom_id":"b54d8833f1960043ef6750ea20bfc4a84ea98f03acd49020ac228326f2873381","pager_element":"4"},"views_dom_id:7dbec2a58ed8ad72d6c7ea01159767fd1949741e7bd3368b8f94304d3fe7cfde":{"view_name":"articles","view_display_id":"opinions","view_args":"51","view_path":"\/front","view_base_path":null,"view_dom_id":"7dbec2a58ed8ad72d6c7ea01159767fd1949741e7bd3368b8f94304d3fe7cfde","pager_element":"2"},"views_dom_id:6a425448e217c9e002da85b080a480b2ab0238f29b6c8d1a090dc16b590a64e8":{"view_name":"articles","view_display_id":"world","view_args":"1","view_path":"\/front","view_base_path":null,"view_dom_id":"6a425448e217c9e002da85b080a480b2ab0238f29b6c8d1a090dc16b590a64e8","pager_element":"4"},"views_dom_id:47f152facd2b856f5914a6a92aa09010607bf1671785260b953ee1e4bdd5fb58":{"view_name":"articles","view_display_id":"sport","view_args":"6","view_path":"\/front","view_base_path":null,"view_dom_id":"47f152facd2b856f5914a6a92aa09010607bf1671785260b953ee1e4bdd5fb58","pager_element":"3"},"views_dom_id:d8b133fe584741a536e341d8ac84bcf1988bab17312d1abee7ba1280c02bedc4":{"view_name":"articles","view_display_id":"health","view_args":"34603","view_path":"\/front","view_base_path":null,"view_dom_id":"d8b133fe584741a536e341d8ac84bcf1988bab17312d1abee7ba1280c02bedc4","pager_element":"4"},"views_dom_id:8dd0bb3fff6815ee044464d04cab0ed5e4248c79c908583c8fb6233b15593d57":{"view_name":"articles","view_display_id":"journalistattack","view_args":"35509","view_path":"\/front","view_base_path":null,"view_dom_id":"8dd0bb3fff6815ee044464d04cab0ed5e4248c79c908583c8fb6233b15593d57","pager_element":"4"},"views_dom_id:f1d311dcf385bf6fcfeab964660eb4087dbc8dd7e1b73a4d21ddcd6234bb8282":{"view_name":"articles","view_display_id":"business","view_args":"26","view_path":"\/front","view_base_path":null,"view_dom_id":"f1d311dcf385bf6fcfeab964660eb4087dbc8dd7e1b73a4d21ddcd6234bb8282","pager_element":"0"},"views_dom_id:4d3980a627a3f127a12ca1f6b125f46874e3b191aee3b7812406d98cfd06d181":{"view_name":"videos","view_display_id":"most_watched","view_args":"","view_path":"\/front","view_base_path":null,"view_dom_id":"4d3980a627a3f127a12ca1f6b125f46874e3b191aee3b7812406d98cfd06d181","pager_element":0},"views_dom_id:a2b35e5a46bfdee4cfd712231210050027768f89a29a7c2e4b2861a217ac1e06":{"view_name":"articles","view_display_id":"most_read","view_args":"","view_path":"\/front","view_base_path":null,"view_dom_id":"a2b35e5a46bfdee4cfd712231210050027768f89a29a7c2e4b2861a217ac1e06","pager_element":0},"views_dom_id:b3b013d887bdc5c2a7ecd5e63acb7ea60b97e427a88cfd2469a6165d7e1059fa":{"view_name":"videos","view_display_id":"top_videos_4","view_args":"","view_path":"\/front","view_base_path":null,"view_dom_id":"b3b013d887bdc5c2a7ecd5e63acb7ea60b97e427a88cfd2469a6165d7e1059fa","pager_element":0},"views_dom_id:a255d1873e8d40bfff0c94b8f93e8d2a4a3c88a7499fee94cf5de457a025d2e8":{"view_name":"videos","view_display_id":"top_videos_1","view_args":"","view_path":"\/front","view_base_path":null,"view_dom_id":"a255d1873e8d40bfff0c94b8f93e8d2a4a3c88a7499fee94cf5de457a025d2e8","pager_element":0},"views_dom_id:3df71cad5b87844470b2c3376a4a4f6411de5e7bc6f7b9f9a3bbe1787316cc6c":{"view_name":"videos","view_display_id":"6pm_bulletin","view_args":"","view_path":"\/front","view_base_path":null,"view_dom_id":"3df71cad5b87844470b2c3376a4a4f6411de5e7bc6f7b9f9a3bbe1787316cc6c","pager_element":0},"views_dom_id:7a4818949a9f61c5ea63c22f42b61acf6309af02385a5b36d2321042f596d8a6":{"view_name":"articles","view_display_id":"featured_news","view_args":"","view_path":"\/front","view_base_path":null,"view_dom_id":"7a4818949a9f61c5ea63c22f42b61acf6309af02385a5b36d2321042f596d8a6","pager_element":"1"},"views_dom_id:da1dbf1b3f5b465a6631dd226092ebb41811237af7786900fdba5d5dd53c1c88":{"view_name":"articles","view_display_id":"main_article_mobile","view_args":"","view_path":"\/front","view_base_path":null,"view_dom_id":"da1dbf1b3f5b465a6631dd226092ebb41811237af7786900fdba5d5dd53c1c88","pager_element":0}}},"ajax":[],"user":{"uid":0,"permissionsHash":"ce0f25197b8b16f044ec1fed82dd2509da0eef2c5399d93cee572416e6833572"}}</script>
+<script src="/core/assets/vendor/domready/ready.min.js?v=1.0.8"></script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=2.2.4"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.1.1"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=8.3.7"></script>
+<script src="/core/misc/drupal.js?v=8.3.7"></script>
+<script src="/core/misc/drupal.init.js?v=8.3.7"></script>
+<script src="/modules/contrib/google_analytics/js/google_analytics.js?v=8.3.7"></script>
+<script src="/themes/custom/tolonews/html/js/common.js?v=1.0.4"></script>
+<script src="/themes/custom/tolonews/html/js/custom_scripts.js?v=1.0.4"></script>
+<script src="/themes/custom/tolonews/html/js/jbcore/juicebox.js?v=1.0.4"></script>
+<script src="/themes/custom/tolonews/html/js/external/jquery.uniform.js?v=1.0.4"></script>
+<script src="/libraries/juicebox/juicebox.js?sz46wm"></script>
+<script src="/modules/contrib/juicebox/js/juicebox_load.js?sz46wm"></script>
+<script src="/modules/custom/tolonews_poll/js/tolonews_ajax_poll.js?v=1.x"></script>
+<script src="/core/misc/progress.js?v=8.3.7"></script>
+<script src="/core/misc/ajax.js?v=8.3.7"></script>
+<script src="/modules/contrib/views_load_more/js/views_load_more.js?v=1.0.0"></script>
+<script src="/core/assets/vendor/jquery-form/jquery.form.min.js?v=3.51"></script>
+<script src="/core/modules/views/js/base.js?v=8.3.7"></script>
+<script src="/core/modules/views/js/ajax_view.js?v=8.3.7"></script>
+<script src="/modules/custom/tolonews_ajax_views/js/tolonews_ajax_views.js?v=1.x"></script>
+
+
+    <script type="text/javascript">
+        // window._taboola = window._taboola || [];
+        // _taboola.push({flush: true});
+    </script> 
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3a11c0aac3","applicationID":"201277280","transactionName":"YFUENUUDCkJWUURbXVkfJwJDCwtfGHZCR0JWXDoiWBABbXJcRFtGTmwlDlkWFl5bXlVAbnJeEghDGzJYUkVzXVxDQgkNWwcWHAlEWVdF","queueTime":0,"applicationTime":1260,"atts":"TBIHQw0ZGUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
